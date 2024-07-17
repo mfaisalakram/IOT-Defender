@@ -13,21 +13,6 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -35,4 +20,45 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+/* Global Variables  */
+:root {
+  --blue-primary: #0a162f;
+  --blue-secondary: #051224;
+  --blue-text: #9595b2;
+  --blue-block-background: #0c0919;
+  --green-primary: #c9e265;
+  --while-primary: #fff;
+  --black-primary: #000;
+}
+
+.global-container {
+  max-width: 1283px;
+}
+
+.global-block {
+  background-color: var(--blue-block-background);
+  border-radius: 20px;
+  border-top: 3px solid #3d5075;
+  border-right: 3px solid #3d5075;
+  border-left: 3px solid #3d5075;
+  border-bottom: 3px solid #0a162f;
+  box-sizing: border-box;
+}
+
+/* Media Queries */
+@media (max-width: 1399.98px) {
+}
+
+@media (max-width: 1199.98px) {
+}
+
+@media (max-width: 991.98px) {
+}
+
+@media (max-width: 767.98px) {
+}
+
+@media (max-width: 575.98px) {
 }
