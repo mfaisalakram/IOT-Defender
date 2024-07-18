@@ -25,20 +25,41 @@ body {
   padding: 20px 20px;
   margin: auto;
 }
-
+/* 
 .global-block {
   background-color: var(--blue-block-background);
   border-radius: 20px;
   border-width: 3px;
   border-style: solid;
-  border-image: linear-gradient(
-      to bottom,
-      #3d5075,
-      #3d5075 70%,
-      #0a162f 70%,
-      #0a162f
-    )
-    1;
+
+  border-image: linear-gradient(to bottom, #3d5075, #0a162f) 1;
+} */
+.global-block-wrapper {
+  background: linear-gradient(to bottom, #3d5075, #0a162f);
+  border-radius: 19px;
+  padding: 2.5px;
+}
+
+.global-block {
+  background-color: var(--blue-block-background);
+  border-radius: 17px;
+  padding: 10px;
+}
+
+.button_primary {
+  background-color: var(--green-primary);
+  text-align: center;
+  outline: none;
+  border: none;
+}
+.button_secondary {
+  background-color: var(--blue-text);
+  outline: none;
+  border: none;
+}
+
+.highlight-text {
+  color: var(--blue-text);
 }
 
 .App {
