@@ -23,6 +23,7 @@ body {
 .global-container {
   max-width: 1283px;
   padding: 20px 20px;
+  margin: auto;
 }
 
 .global-block {
@@ -38,6 +39,22 @@ body {
       #0a162f
     )
     1;
+}
+
+.button_primary {
+  background-color: var(--green-primary);
+  text-align: center;
+  outline: none;
+  border: none;
+}
+.button_secondary {
+  background-color: var(--blue-text);
+  outline: none;
+  border: none;
+}
+
+.highlight-text {
+  color: var(--blue-text);
 }
 
 .App {
