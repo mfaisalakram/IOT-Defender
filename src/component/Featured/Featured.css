@@ -1,0 +1,36 @@
+.Featured {
+  padding: 50px 0px;
+  text-align: left;
+}
+
+.Featured .feature-block {
+  width: 100%;
+  height: fit-content;
+  padding: 30px;
+}
+
+.Featured .heading-block {
+  gap: 20px;
+}
+.Featured .feature-block .main-text {
+  font-family: "Scandla-Bold";
+  font-size: 36px;
+  line-height: 43.2px;
+  color: var(--while-primary);
+
+  margin: 30px 0px;
+}
+.Featured .feature-block .main-heading {
+  font-size: 16px;
+  line-height: 19.2px;
+  font-family: "Scandla-Bold";
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.Featured .feature-block .bottom-text {
+  font-family: "Inter Tight";
+  font-size: 16px;
+  /* line-height: 29.04px; */
+  line-height: 19.2px;
+}
