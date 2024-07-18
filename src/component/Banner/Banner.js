@@ -1,5 +1,5 @@
 import React from "react";
 
 export const Banner = () => {
-  return <div>Banner</div>;
+  return <div className="Banner"></div>;
 };
