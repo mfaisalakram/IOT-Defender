@@ -1,0 +1,108 @@
+.HowItWork {
+  background-color: var(--blue-block-background);
+  margin: 50px 0px;
+  padding: 40px 0px;
+  text-align: left;
+}
+
+.HowItWork .head-content .heading-container {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 20px;
+}
+
+.HowItWork .head-content .heading-container h3 {
+  font-size: 40px;
+  line-height: 68px;
+  font-weight: 700;
+  font-family: "Scandla-Bold";
+  background: -webkit-linear-gradient(to right, white 0%, #9595b2 100%);
+  background: linear-gradient(to right, white 0%, #9595b2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.HowItWork .head-content p {
+  color: #fff;
+  font-family: "Inter Tight";
+  font-weight: 400px;
+  font-size: 24px;
+  line-height: 29.04px;
+  margin-bottom: 40px;
+}
+
+.HowItWork .card_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+}
+
+.HowItWork .card_container .card_outer {
+  background-color: var(--black-primary) !important;
+  padding: 0px;
+  position: relative;
+}
+
+.HowItWork .card_container .card_inner {
+  background-color: var(--black-primary);
+  border-radius: 20px;
+}
+
+.HowItWork .card_inner {
+  padding: 25px;
+  background-color: #0a162f !important;
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+  gap: 20px;
+  position: relative;
+  color: white;
+  border-radius: 20px;
+  clip-path: polygon(0 0, calc(100% - 20px) 0, 100% 20px, 100% 100%, 0% 100%);
+}
+
+.HowItWork .button-container {
+  text-align: end;
+  margin: 30px 0px;
+}
+.HowItWork .card_inner .title {
+  font-size: 24px;
+  line-height: 29.04px;
+  color: var(--white-primary);
+  font-family: "Inter Tight";
+  font-weight: 500;
+}
+.HowItWork .card_inner .title {
+  font-size: 24px;
+  line-height: 29.04px;
+  color: var(--white-primary);
+  font-family: "Inter Tight";
+  font-weight: 400;
+  color: #fff !important;
+}
+
+.HowItWork .card_container .card_outer .arrow-icon-container {
+  position: absolute;
+  right: -43px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.HowItWork
+  .card_container
+  .global-block-wrapper_top:last-of-type
+  .arrow-icon-container {
+  display: none !important;
+}
+
+.HowItWork .button-container .book-demo-button {
+  font-family: "Inter Tight";
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21.78px;
+  color: var(--black-primary);
+  border-radius: 100px;
+  padding: 8px 24px;
+}

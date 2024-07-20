@@ -1,4 +1,3 @@
-import "./App.css";
 import { Banner } from "./component/Banner/Banner";
 import { Clients } from "./component/Clients/Clients";
 import { Footer } from "./component/common/Footer/Footer";
@@ -10,6 +9,8 @@ import { HowItWork } from "./component/HowItWork/HowItWork";
 import { MembershipPlan } from "./component/MembershipPlan/MembershipPlan";
 import { OurFeatures } from "./component/OurFeatures/OurFeatures";
 
+import "./App.css";
+
 function App() {
   return (
     <div className="App">
@@ -20,7 +21,7 @@ function App() {
       <HowItWork />
       <OurFeatures />
       <MembershipPlan />
-      <Faq/>
+      <Faq />
       <GetInTouch />
       <Footer />
     </div>

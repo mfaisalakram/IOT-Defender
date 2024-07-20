@@ -46,6 +46,17 @@ body {
   padding: 10px;
 }
 
+.global-block-wrapper_top {
+  background: linear-gradient(to top, #3d5075, #0a162f);
+  border-radius: 19px;
+  padding: 2.5px;
+}
+
+.global-block_top {
+  background-color: var(--blue-block-background);
+  border-radius: 17px;
+  padding: 10px;
+}
 .button_primary {
   background-color: var(--green-primary);
   text-align: center;
