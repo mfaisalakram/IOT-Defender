@@ -59,13 +59,12 @@ export const Faq = () => {
   };
 
   return (
-    <Box
-      className="Banner"
+    <Box className={"global-container"}
       sx={{
-        background: "r",
-        maxWidth: "1001px",
-        padding: "20px 20px",
+        // maxWidth: { xs: "1400px !important", md: "1001px" },
+        padding: "20px",
         margin: "auto",
+        overflow: "hidden", // Ensures content does not overflow
       }}
     >
       <Box
@@ -80,7 +79,7 @@ export const Faq = () => {
 
         <Typography
           className="main-heading"
-          sx={{ fontSize: "40px", marginLeft: 1, fontWeight: "700" }}
+          sx={{ fontSize: { xs: "24px", md: "40px" }, marginLeft: 1, fontWeight: "700" }}
         >
           FAQ
         </Typography>
@@ -108,7 +107,7 @@ export const Faq = () => {
                 sx={{
                   color: "white",
                   fontWeight: "700",
-                  fontSize: "24px",
+                  fontSize: { xs: "18px", md: "24px" },
                   lineHeight: "28.8px",
                 }}
               >
@@ -117,7 +116,7 @@ export const Faq = () => {
             </AccordionSummary>
             <AccordionDetails>
               <Typography
-                sx={{ color: "white", fontSize: "20px", textAlign: "start" }}
+                sx={{ color: "white", fontSize: { xs: "16px", md: "20px" }, textAlign: "start" }}
               >
                 {item.answer}
               </Typography>
