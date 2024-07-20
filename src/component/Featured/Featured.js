@@ -27,8 +27,9 @@ export const Featured = () => {
               </span>{" "}
               within a permissioned network.
             </p>
-            <p className="bottom-text">
-              Experience seamless communication and scalability with our <br />
+            <p className="bottom-text ">
+              Experience seamless communication and scalability with our{" "}
+              <br className="d-sm-none d-md-block d-none" />
               state-of-the-art cross-compatible platform.
             </p>
           </div>

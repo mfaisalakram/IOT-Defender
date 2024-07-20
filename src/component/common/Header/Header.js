@@ -46,8 +46,12 @@ const Header = () => {
         display: "flex",
         justifyContent: "space-around",
         alignItems: "center",
-        width: "100%",
+        width: "100% !important",
         height: "154px",
+        // position: "absolute",
+        // top: 0,
+        // left: 0,
+        // zIndex: 999999999,
       }}
     >
       <Box

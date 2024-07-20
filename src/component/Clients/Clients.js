@@ -28,6 +28,22 @@ export const Clients = () => {
           slidesPerView: 6,
           spaceBetween: 20,
         },
+        800: {
+          slidesPerView: 4,
+          spaceBetween: 20,
+        },
+        500: {
+          slidesPerView: 3,
+          spaceBetween: 20,
+        },
+        400: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
+        300: {
+          slidesPerView: 1,
+          spaceBetween: 20,
+        },
       },
     });
   }, []);

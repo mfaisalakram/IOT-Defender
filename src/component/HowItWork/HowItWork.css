@@ -80,9 +80,9 @@
   font-family: "Inter Tight";
   font-weight: 500;
 }
-.HowItWork .card_inner .title {
-  font-size: 24px;
-  line-height: 29.04px;
+.HowItWork .card_inner .description {
+  font-size: 18px;
+  line-height: 23.4px;
   color: var(--white-primary);
   font-family: "Inter Tight";
   font-weight: 400;
@@ -110,4 +110,37 @@
   color: var(--black-primary);
   border-radius: 100px;
   padding: 8px 24px;
+}
+
+@media (max-width: 575.98px) {
+  .HowItWork .head-content .heading-container h3 {
+    font-size: 32px;
+    line-height: 68px;
+  }
+
+  .HowItWork .head-content p {
+    font-size: 16px;
+    line-height: 19.36px;
+    width: 90%;
+  }
+  .HowItWork .card_container {
+    flex-wrap: wrap;
+    gap: 45px;
+  }
+  .HowItWork .card_container .card_outer .arrow-icon-container {
+    right: auto;
+    left: 50%;
+    bottom: -37px;
+    top: auto;
+    transform: translateX(-50%) rotate(90deg);
+  }
+
+  .HowItWork .card_inner .title {
+    font-size: 24px;
+    line-height: 24.2px;
+  }
+  .HowItWork .card_inner .description {
+    font-size: 18px;
+    line-height: 23.4px;
+  }
 }

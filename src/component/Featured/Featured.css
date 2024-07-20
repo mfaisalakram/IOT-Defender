@@ -31,6 +31,21 @@
 .Featured .feature-block .bottom-text {
   font-family: "Inter Tight";
   font-size: 16px;
-  /* line-height: 29.04px; */
   line-height: 19.2px;
+}
+
+@media (max-width: 575.98px) {
+  .Featured .feature-block .main-text {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .Featured .feature-block .main-heading {
+    font-size: 16px;
+    line-height: 19.2px;
+  }
+  .Featured .feature-block .bottom-text {
+    font-family: "Inter Tight";
+    font-size: 18px;
+    line-height: 21.78px;
+  }
 }
