@@ -7,6 +7,8 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { Pagination, Navigation, Autoplay } from "swiper/modules";
 import "./MembershipPlan.css";
+import { Box } from "@mui/material";
+import PlayCircleOutlineRoundedIcon from "@mui/icons-material/PlayCircleOutlineRounded";
 
 export const MembershipPlan = () => {
   const MembershipData = [
@@ -82,11 +84,47 @@ export const MembershipPlan = () => {
       ],
       buttonText: "Get Started",
     },
+    {
+      id: 5,
+      title: "Gold",
+      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      type: "Popular",
+      currency: "$",
+      price: 0,
+      period: "month",
+      items: [
+        {
+          title: "100,000 API Calls",
+        },
+        {
+          title: "Unlimited Bandwidth",
+        },
+      ],
+      buttonText: "Get Started",
+    },
+    {
+      id: 6,
+      title: "Gold",
+      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      type: "Popular",
+      currency: "$",
+      price: 0,
+      period: "month",
+      items: [
+        {
+          title: "100,000 API Calls",
+        },
+        {
+          title: "Unlimited Bandwidth",
+        },
+      ],
+      buttonText: "Get Started",
+    },
   ];
 
   return (
     <div className="MembershipPlan">
-      <div style={{ marginLeft: "560px" }}>
+      <div style={{ marginLeft: "350px" }}>
         <div className="head-content">
           <div className="heading-container">
             <DotIcon />
@@ -100,10 +138,15 @@ export const MembershipPlan = () => {
             spaceBetween={30}
             loop={true}
             watchOverflow={false}
-            navigation={true}
-            autoplay={{ delay: 3000, disableOnInteraction: false }}
+            navigation={{ nextEl: ".arrow-left", prevEl: ".arrow-right" }}
+            // navigation={true}
+            autoplay={{ delay: 4000, disableOnInteraction: false }}
             modules={[Pagination, Navigation, Autoplay]}
             className="mySwiper"
+            // navigation={{
+            //   prevEl: ".swiper-button-prev",
+            //   nextEl: ".swiper-button-next",
+            // }}
           >
             {MembershipData?.map((item, index) => (
               <SwiperSlide key={index}>
@@ -143,6 +186,20 @@ export const MembershipPlan = () => {
             ))}
           </Swiper>
         </div>
+        <Box
+          sx={{
+            display: "flex",
+            flexDirection: "row",
+            justifyContent: "end",
+            marginRight: "190px",
+            cursor:"pointer",
+            mt:3
+          }}
+        >
+          <img style={{height:"50px",width:"50px",marginRight:"20px"}} className="arrow-left arrow" src="/assets/backto1.png" alt="back arrow" />
+          <img className="arrow-right arrow" src="/assets/nextto1.png" alt="back arrow" />
+         
+        </Box>
       </div>
     </div>
   );
