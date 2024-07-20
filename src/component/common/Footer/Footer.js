@@ -13,7 +13,7 @@ export const Footer = () => {
       }}
     >
       <Grid container spacing={2} alignItems="center">
-        <Grid item xs={3}>
+        <Grid item xs={12} md={3}>
           <Box sx={{ textAlign: "start" }}>
             <img src="/assets/logo.png" alt="" width="200px" />
             <Typography
@@ -39,108 +39,70 @@ export const Footer = () => {
             </Typography>
           </Box>
         </Grid>
-        <Grid item xs={5} sx={{ textAlign: "start", marginLeft: "80px" }}>
+        <Grid
+          item
+          xs={12}
+          md={5}
+          sx={{
+            maxHeight: "531px",
+            textAlign: "start",
+            marginTop: { xs: "70px", md: "0px" },
+            marginLeft: { md: "80px" },
+          }}
+        >
           <Box className="quick-links">
-            <Grid container spacing={2}>
-              <Grid item xs={6} sx={{ marginTop: "-45px" }}>
-                <Box>
-                  <Typography
-                    sx={{
-                      lineHeight: "21.6px",
-                      fontWeight: "500",
-                      marginBottom: 3,
-                      fontSize: "18px",
-                    }}
-                  >
-                    Quick Links
-                  </Typography>
-                  <Typography
-                    sx={{
-                      lineHeight: "21.6px",
-                      fontWeight: "400",
-                      fontSize: "18px",
-                      mb: 3,
-                    }}
-                  >
-                    Home
-                  </Typography>
-                  <Typography
-                    sx={{
-                      lineHeight: "21.6px",
-                      fontWeight: "400",
-                      fontSize: "18px",
-                      mb: 3,
-                    }}
-                  >
-                    Data Security
-                  </Typography>
-                  <Typography
-                    sx={{
-                      lineHeight: "21.6px",
-                      fontSize: "18px",
-                      fontWeight: "400",
-                      mb: 3,
-                    }}
-                  >
-                    Process
-                  </Typography>
-                </Box>
-              </Grid>
-              <Grid item xs={6} sx={{ marginTop: "-45px" }}>
+            <Typography
+              sx={{
+                lineHeight: "21.6px",
+                fontWeight: "600",
+                marginBottom: 3,
+                fontSize: "18px",
+              }}
+            >
+              Quick Links
+            </Typography>
+            <Box
+              sx={{
+                display: "grid",
+                gridTemplateColumns: "repeat(auto-fill, minmax(200px, 1fr))",
+                gap: 2,
+                maxHeight: "100%",
+                overflow: "hidden",
+              }}
+            >
+              {[
+                "Home",
+                "Data Security",
+                "Process",
+                "Membership",
+                "FAQ",
+                "Book a demo",
+              ].map((link, index) => (
                 <Typography
+                  key={index}
                   sx={{
                     lineHeight: "21.6px",
-                    fontWeight: "500",
-                    marginBottom: 3,
+                    fontWeight: "400",
                     fontSize: "18px",
+                    mb: 3,
                   }}
                 >
-                  Features
+                  {link}
                 </Typography>
-                <Typography
-                  sx={{
-                    lineHeight: "21.6px",
-                    fontWeight: "500",
-                    marginBottom: 3,
-                    fontSize: "18px",
-                  }}
-                >
-                  Membership
-                </Typography>
-                <Typography
-                  sx={{
-                    lineHeight: "21.6px",
-                    fontWeight: "500",
-                    marginBottom: 3,
-                    fontSize: "18px",
-                  }}
-                >
-                  FAQ
-                </Typography>
-                <Typography
-                  sx={{
-                    lineHeight: "21.6px",
-                    fontWeight: "500",
-                    marginBottom: 3,
-                    fontSize: "18px",
-                  }}
-                >
-                  Book a demo
-                </Typography>
-              </Grid>
-            </Grid>
+              ))}
+            </Box>
           </Box>
         </Grid>
-        <Grid item xs={3} sx={{ marginTop: "-45px" }}>
+        <Grid item xs={12} md={3} sx={{ marginTop: { xs: 3, md: "-45px" } }}>
           <Box
             className="follow-us"
-            sx={{ textAlign: "start", marginLeft: "30px" }}
+            sx={{ textAlign: "start", marginLeft: { md: "30px", xs: "0px" } }}
           >
             <Typography
               sx={{
                 fontSize: "18px",
                 lineHeight: "21px",
-                fontWeight: "500",
+                fontWeight: "600",
                 mb: 3,
               }}
             >
@@ -156,6 +118,7 @@ export const Footer = () => {
                   fontWeight: "500",
                   fontSize: "18px",
                   marginLeft: 1,
+                  textDecoration: "underline",
                 }}
               >
                 iotdefender
@@ -171,6 +134,7 @@ export const Footer = () => {
                   fontWeight: "500",
                   fontSize: "18px",
                   marginLeft: 1,
+                  textDecoration: "underline",
                 }}
               >
                 iotdefender
@@ -181,7 +145,7 @@ export const Footer = () => {
         <Divider sx={{ width: "100%", borderColor: "white", mt: 4, mb: 6 }} />
         <Box
           sx={{
-            display: "flex",
+            display: { xs: "block", md: "flex" },
             justifyContent: "space-between",
             alignItems: "center",
             width: "100%",
@@ -194,7 +158,12 @@ export const Footer = () => {
             © 2024 IoT Defender
           </Typography>
           <Typography
-            sx={{ fontSize: "16px", fontWeight: "400", lineHeight: "19.2px" }}
+            sx={{
+              fontSize: "16px",
+              fontWeight: "400",
+              lineHeight: "19.2px",
+              mt: { md: 0, xs: 4 },
+            }}
           >
             Privacy Policy - Terms & Conditions
           </Typography>

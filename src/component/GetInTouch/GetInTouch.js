@@ -27,7 +27,7 @@ export const GetInTouch = () => {
     console.log(formValues);
   };
   return (
-    <Box sx={{ background: "#0c0919", height: "728px" ,display:"flex"}}>
+    <Box sx={{ background: "#0c0919" }}>
       <Box className="global-container">
         <Grid container spacing={4} justifyContent="start" textAlign={"start"}>
           <Grid item xs={12} md={4}>
@@ -60,9 +60,10 @@ export const GetInTouch = () => {
               on and away from the cloud. We're ready to support your needs
               contact us to get started!
             </Typography>
+
             <Box
               sx={{
-                display: "flex",
+                display: { xs: "none", md: "flex" },
                 flexDirection: "column",
                 // alignItems: "center",
                 mb: 4,
@@ -186,9 +187,7 @@ export const GetInTouch = () => {
                     onChange={handleChange}
                   />
                 </Box>
-                <Box
-                  sx={{ display: "flex", flexDirection: "row",  }}
-                >
+                <Box sx={{ display: "flex", flexDirection: "row" }}>
                   <TextField
                     borderRadius={"50px"}
                     InputLabelProps={{ style: { color: "#82868F" } }}
@@ -199,7 +198,7 @@ export const GetInTouch = () => {
                         color: "white",
                         background: "#040D1F",
                         borderRadius: "10px",
-                        width:"775px !important"
+                        width: "775px !important",
                       },
                     }}
                     name="telephone"
@@ -208,7 +207,11 @@ export const GetInTouch = () => {
                     fullWidth
                     value={formValues.telephone}
                     onChange={handleChange}
-                    sx={{ mr: 2, width: "775px !important" ,marginRight:"0px !important"}}
+                    sx={{
+                      mr: 2,
+                      width: "775px !important",
+                      marginRight: "0px !important",
+                    }}
                   />
                 </Box>
                 <Box sx={{ marginBlock: 3, borderRadius: "10px" }}>
@@ -233,12 +236,12 @@ export const GetInTouch = () => {
                     onChange={handleChange}
                   />
                 </Box>
-               
+
                 <Box sx={{ display: "flex", justifyContent: "end", mt: 4 }}>
                   <Button
                     type="submit"
                     sx={{
-                      fontSize: "18px",
+                      fontSize: { xs: "16px", md: "18px" },
                       fontWeight: "700",
                       lineHeight: "21.78px",
                       color: "black",
@@ -251,8 +254,8 @@ export const GetInTouch = () => {
                       "&:focus": {
                         outline: "none",
                       },
-                      width: "187px",
-                      height: "46px",
+                      width: { xs: "168px", md: "187px" },
+                      height: { xs: "40px", md: "46px" },
                     }}
                     variant="contained"
                   >
@@ -260,6 +263,78 @@ export const GetInTouch = () => {
                   </Button>
                 </Box>
               </form>
+            </Box>
+            <Box
+              sx={{
+                display: { xs: "flex", md: "none" },
+                flexDirection: "column",
+                alignItems: "center",
+                mt: 4,
+              }}
+            >
+              <Box
+                sx={{
+                  display: "flex",
+                  alignItems: "center",
+                  mb: 4,
+                }}
+              >
+                <Wolfberryllc />
+                <Typography
+                  className="main-heading"
+                  sx={{
+                    fontSize: "16px",
+                    marginLeft: 2,
+                    fontWeight: "400",
+                    lineHeight: "19.2px",
+                    textDecoration: "underline",
+                  }}
+                >
+                  support@wolfberryllc.com
+                </Typography>
+              </Box>
+              <Box
+                sx={{
+                  display: "flex",
+                  alignItems: "center",
+                  mb: 4,
+                }}
+              >
+                <TwitterSvg />
+                <Typography
+                  className="main-heading"
+                  sx={{
+                    fontSize: "16px",
+                    marginLeft: 2,
+                    fontWeight: "400",
+                    lineHeight: "19.2px",
+                    textDecoration: "underline",
+                  }}
+                >
+                  iotdefender
+                </Typography>
+              </Box>
+              <Box
+                sx={{
+                  display: "flex",
+                  alignItems: "center",
+                  mb: 4,
+                }}
+              >
+                <LinkedInSvg />
+                <Typography
+                  className="main-heading"
+                  sx={{
+                    fontSize: "16px",
+                    marginLeft: 2,
+                    fontWeight: "400",
+                    lineHeight: "19.2px",
+                    textDecoration: "underline",
+                  }}
+                >
+                  iotdefender
+                </Typography>
+              </Box>
             </Box>
           </Grid>
         </Grid>
