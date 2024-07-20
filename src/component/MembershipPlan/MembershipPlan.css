@@ -1,0 +1,134 @@
+@import "swiper/css";
+@import "swiper/css/pagination";
+@import "swiper/css/navigation";
+.MembershipPlan {
+  background-color: var(--blue-block-background);
+  padding: 90px 0px;
+  text-align: left;
+}
+
+.MembershipPlan .head-content .heading-container {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 20px;
+}
+
+.MembershipPlan .head-content .heading-container h3 {
+  font-size: 40px;
+  line-height: 68px;
+  font-weight: 700;
+  font-family: "Scandla-Bold";
+  font-weight: 700;
+  background: -webkit-linear-gradient(to right, white 0%, #9595b2 100%);
+  background: linear-gradient(to right, white 0%, #9595b2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin: 0;
+  padding: 0;
+}
+
+.MembershipPlan .head-content p {
+  color: #fff;
+  font-family: "Inter Tight";
+  font-weight: 400px;
+  font-size: 24px;
+  line-height: 28.8px;
+  text-align: center;
+  width: 80%;
+  margin: auto;
+  margin-bottom: 40px;
+  font-weight: 700;
+}
+
+.MembershipPlan .swiper-wrapper {
+  justify-content: space-between;
+}
+.MembershipPlan .card-outer .card-inner {
+  padding: 60px 30px;
+}
+/* .MembershipPlan .card-outer .card-inner:nth-child(3) {
+  background-color: var(--green-primary);
+} */
+.MembershipPlan .card-outer .card-inner .card-brand {
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+  align-items: start;
+  gap: 20px;
+  border-bottom: 1px solid #fff !important;
+  margin-bottom: 40px;
+}
+.MembershipPlan .card-outer .card-inner .title {
+  font-size: 32px;
+  line-height: 38.4px;
+  font-family: "Scandla-Bold";
+  font-weight: 700;
+}
+.MembershipPlan .card-outer .card-inner .description {
+  font-size: 18px;
+  line-height: 23.4px;
+  font-family: "Inter Tight";
+  font-weight: 400;
+}
+
+.MembershipPlan .card-outer .card-inner .price-container {
+  position: relative;
+  padding-left: 25px;
+}
+.MembershipPlan .card-outer .card-inner .price-container .currency {
+  font-size: 36px;
+  line-height: 43.2px;
+  font-family: "Scandla-Bold";
+  font-weight: 700;
+  position: absolute;
+  top: 16px;
+  left: 0;
+}
+
+.MembershipPlan .card-outer .card-inner .price-container .price {
+  font-size: 96px;
+  line-height: 115.2px;
+  font-family: "Scandla-Bold";
+  font-weight: 700;
+}
+
+.MembershipPlan .card-outer .card-inner .price-container .period {
+  font-size: 24px;
+  line-height: 29px;
+  font-family: "Inter Tight";
+  font-weight: 500;
+}
+
+.MembershipPlan .card-outer .card-inner .card-bottom .single-item {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 20px;
+}
+
+.MembershipPlan .card-outer .card-inner .card-bottom .single-item .title {
+  font-size: 24px;
+  line-height: 31.2px;
+  font-family: "Inter Tight";
+  font-weight: 400;
+}
+
+.MembershipPlan .card-outer .card-inner .button-container {
+  margin-top: 30px;
+  text-align: center;
+}
+.MembershipPlan .card-outer .card-inner .get-started-button {
+  font-family: "Inter Tight";
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21.78px;
+  color: var(--black-primary);
+  border-radius: 100px;
+  padding: 8px 24px;
+  width: 100%;
+}
+.MembershipPlan .swiper-backface-hidden .swiper-slide {
+  width: auto !important;
+}
