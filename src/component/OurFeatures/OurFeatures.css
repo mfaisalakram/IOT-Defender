@@ -1,0 +1,93 @@
+.OurFeatures {
+  background-color: var(--blue-block-background);
+  padding: 90px 0px;
+  text-align: left;
+  background: url("../../assets/images/our-features-circle-background.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 77% 150%;
+}
+
+.OurFeatures .head-content .heading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.OurFeatures .head-content .heading-container h3 {
+  font-size: 40px;
+  line-height: 68px;
+  font-weight: 700;
+  font-family: "Scandla-Bold";
+  font-weight: 700;
+  background: -webkit-linear-gradient(to right, white 0%, #9595b2 100%);
+  background: linear-gradient(to right, white 0%, #9595b2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.OurFeatures .head-content p {
+  color: #fff;
+  font-family: "Inter Tight";
+  font-weight: 400px;
+  font-size: 24px;
+  line-height: 28.8px;
+  text-align: center;
+  width: 80%;
+  margin: auto;
+  margin-bottom: 40px;
+  font-weight: 700;
+}
+
+.OurFeatures .card_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.OurFeatures .card_container .global-block-wrapper {
+  flex: 0 0 calc(33.333% - 26.67px);
+  box-sizing: border-box;
+}
+
+.OurFeatures .card_container .card_inner {
+  background-color: var(--black-primary);
+  border-radius: 20px;
+}
+
+.OurFeatures .card_inner {
+  padding: 25px;
+  background-color: #0c0919 !important;
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+  gap: 20px;
+  position: relative;
+  color: white;
+  border-radius: 20px;
+}
+
+.OurFeatures .button-container {
+  text-align: end;
+  margin: 30px 0px;
+}
+.OurFeatures .card_inner .title {
+  font-size: 24px;
+  line-height: 29.04px;
+  color: var(--white-primary);
+  font-family: "Inter Tight";
+  font-weight: 500;
+}
+.OurFeatures .card_inner .title {
+  font-size: 24px;
+  line-height: 29.04px;
+  color: var(--white-primary);
+  font-family: "Inter Tight";
+  font-weight: 400;
+  color: #fff !important;
+}

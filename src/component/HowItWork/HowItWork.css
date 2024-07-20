@@ -3,6 +3,7 @@
   margin: 50px 0px;
   padding: 40px 0px;
   text-align: left;
+  margin-bottom: 0px;
 }
 
 .HowItWork .head-content .heading-container {
@@ -22,6 +23,7 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+  font-weight: 700;
 }
 
 .HowItWork .head-content p {
@@ -31,6 +33,7 @@
   font-size: 24px;
   line-height: 29.04px;
   margin-bottom: 40px;
+  font-weight: 700;
 }
 
 .HowItWork .card_container {
