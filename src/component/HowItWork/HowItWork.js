@@ -63,7 +63,7 @@ export const HowItWork = () => {
                   <div className="arrow-icon-container">
                     <RightArrowIcon />
                   </div>
-                  {item?.id}
+                  <div className="item-id">{item?.id}</div>
                   <div className="card_inner">
                     <div className="icon">{item?.icon}</div>
                     <div className="title">{item?.title}</div>

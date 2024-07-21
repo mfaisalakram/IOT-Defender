@@ -51,6 +51,18 @@
   position: relative;
 }
 
+.HowItWork .item-id {
+  position: absolute;
+  top: -4px;
+  right: -1.5px;
+  z-index: 1;
+  font-size: 24px;
+  line-height: 29.04px;
+  font-family: "Inter Tight";
+  font-weight: "500";
+  background-color: black;
+}
+
 .HowItWork .card_container .card_inner {
   background-color: var(--black-primary);
   border-radius: 20px;
@@ -66,7 +78,10 @@
   position: relative;
   color: white;
   border-radius: 20px;
-  clip-path: polygon(0 0, calc(100% - 20px) 0, 100% 20px, 100% 100%, 0% 100%);
+  /* clip-path: polygon(0 0, calc(100% - 20px) 0, 100% 20px, 100% 100%, 0% 100%); */
+  /* clip-path: inset(0 0 0 0 round 0 20px 0 0); */
+  /* transform: translate(50%, -50%); */
+  clip-path: url(#clipPath);
 }
 
 .HowItWork .button-container {
@@ -144,5 +159,3 @@
     line-height: 23.4px;
   }
 }
-
-

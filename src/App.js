@@ -21,7 +21,6 @@ function App() {
       <HowItWork />
       <OurFeatures />
       <MembershipPlan />
-
       <Faq />
       <GetInTouch />
       <Footer />

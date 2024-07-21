@@ -136,17 +136,11 @@ export const MembershipPlan = () => {
           <Swiper
             slidesPerView={4}
             spaceBetween={30}
-            loop={true}
+            // loop={true}
             watchOverflow={false}
             navigation={{ nextEl: ".arrow-left", prevEl: ".arrow-right" }}
-            // navigation={true}
-            autoplay={{ delay: 4000, disableOnInteraction: false }}
             modules={[Pagination, Navigation, Autoplay]}
             className="mySwiper"
-            // navigation={{
-            //   prevEl: ".swiper-button-prev",
-            //   nextEl: ".swiper-button-next",
-            // }}
           >
             {MembershipData?.map((item, index) => (
               <SwiperSlide key={index}>
@@ -192,13 +186,21 @@ export const MembershipPlan = () => {
             flexDirection: "row",
             justifyContent: "end",
             marginRight: "190px",
-            cursor:"pointer",
-            mt:3
+            cursor: "pointer",
+            mt: 3,
           }}
         >
-          <img style={{height:"50px",width:"50px",marginRight:"20px"}} className="arrow-left arrow" src="/assets/backto1.png" alt="back arrow" />
-          <img className="arrow-right arrow" src="/assets/nextto1.png" alt="back arrow" />
-         
+          <img
+            style={{ height: "50px", width: "50px", marginRight: "20px" }}
+            className="arrow-left arrow"
+            src="/assets/backto1.png"
+            alt="back arrow"
+          />
+          <img
+            className="arrow-right arrow"
+            src="/assets/nextto1.png"
+            alt="back arrow"
+          />
         </Box>
       </div>
     </div>
