@@ -10,20 +10,37 @@ import { MembershipPlan } from "./component/MembershipPlan/MembershipPlan";
 import { OurFeatures } from "./component/OurFeatures/OurFeatures";
 
 import "./App.css";
+import { useEffect, useState } from "react";
+import SplashScreen from "./component/SplashScreen/SplashScreen";
 
 function App() {
+  const [showSplash, setShowSplash] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setShowSplash(false);
+    }, 3000);
+
+    return () => clearTimeout(timer); // Cleanup the timer on component unmount
+  }, []);
   return (
     <div className="App">
-      <Header />
-      <Banner />
-      <Clients />
-      <Featured />
-      <HowItWork />
-      <OurFeatures />
-      <MembershipPlan />
-      <Faq />
-      <GetInTouch />
-      <Footer />
+      {showSplash ? (
+        <SplashScreen />
+      ) : (
+        <>
+          <Header />
+          <Banner />
+          <Clients />
+          <Featured />
+          <HowItWork />
+          <OurFeatures />
+          <MembershipPlan />
+          <Faq />
+          <GetInTouch />
+          <Footer />
+        </>
+      )}
     </div>
   );
 }
