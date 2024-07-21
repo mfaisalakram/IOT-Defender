@@ -28,7 +28,7 @@ export const GetInTouch = () => {
   };
   return (
     <Box sx={{ background: "#0c0919" }}>
-      <Box className="global-container">
+      <Box className="global-container" sx={{paddingBlock:"80px"}}>
         <Grid container spacing={4} justifyContent="start" textAlign={"start"}>
           <Grid item xs={12} md={4}>
             <Box
