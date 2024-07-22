@@ -13,30 +13,29 @@ export const HowItWork = () => {
     {
       id: "01",
       icon: <CodeIcon />,
-      title: "Get your API Key",
+      title: "Setup devices & sensors",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
+        "After signing up for a subscription plan, Initialize your device and add sensor names in the dashboard. ",
     },
     {
       id: "02",
       icon: <MintIcon />,
-      title: "Mint your IoT Data",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
+      title: "Heading: Get API Key",
+      description: "Use this API Secret Key for making authorized API calls. ",
     },
     {
       id: "03",
       icon: <MonitorIcon />,
-      title: "Monitor Performance",
+      title: "Heading: Get API Code",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
+        "Copy and use your JSON formatted API code from IoT defender Scratch-Pad request section. ",
     },
     {
       id: "04",
       icon: <TempringIcon />,
-      title: "No Data Tampering",
+      title: "Heading: Mint & Retrieve your Data",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
+        "Use IoT defender APIs in your software for uploading IoT generated values. ",
     },
   ];
   return (
@@ -48,10 +47,12 @@ export const HowItWork = () => {
             <h3 className="heading">How it works </h3>
           </div>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.
+            IoT Defender provides easily onboarding process. Select your desired
+            subscription plan after which set up your device(s), you will also
+            receive an API Security token key, set up your device(s), and mint
+            data onto the IoT Defender network blockchain via API calls. You can
+            easily retrieve this data with further API calls, ensuring secure,
+            immutable, and accessible IoT data management.
           </p>
         </div>
 
