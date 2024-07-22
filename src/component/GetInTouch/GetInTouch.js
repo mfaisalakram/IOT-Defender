@@ -28,7 +28,7 @@ export const GetInTouch = () => {
   };
   return (
     <Box sx={{ background: "#0c0919" }}>
-      <Box className="global-container" sx={{paddingBlock:"80px"}}>
+      <Box className="global-container" sx={{ paddingBlock: "80px" }}>
         <Grid container spacing={4} justifyContent="start" textAlign={"start"}>
           <Grid item xs={12} md={4}>
             <Box
@@ -74,6 +74,8 @@ export const GetInTouch = () => {
                   display: "flex",
                   alignItems: "center",
                   mb: 4,
+                  cursor: "pointer",
+                  // textDecoration: "none",
                 }}
               >
                 <Wolfberryllc />
@@ -91,10 +93,15 @@ export const GetInTouch = () => {
                 </Typography>
               </Box>
               <Box
+                component="a"
+                href="https://x.com/wolfberryllc"
+                target="_blank"
+                rel="noopener noreferrer"
                 sx={{
                   display: "flex",
                   alignItems: "center",
                   mb: 4,
+                  textDecoration: "none",
                 }}
               >
                 <TwitterSvg />
@@ -106,12 +113,17 @@ export const GetInTouch = () => {
                     fontWeight: "400",
                     lineHeight: "19.2px",
                     textDecoration: "underline",
+                    color: "white",
                   }}
                 >
                   iotdefender
                 </Typography>
               </Box>
               <Box
+                component="a"
+                href="https://www.linkedin.com/company/wolfberryllc/"
+                target="_blank"
+                rel="noopener noreferrer"
                 sx={{
                   display: "flex",
                   alignItems: "center",
@@ -127,6 +139,7 @@ export const GetInTouch = () => {
                     fontWeight: "400",
                     lineHeight: "19.2px",
                     textDecoration: "underline",
+                    color: "white",
                   }}
                 >
                   iotdefender
@@ -294,10 +307,15 @@ export const GetInTouch = () => {
                 </Typography>
               </Box>
               <Box
+                component="a"
+                href="https://x.com/wolfberryllc"
+                target="_blank"
+                rel="noopener noreferrer"
                 sx={{
                   display: "flex",
                   alignItems: "center",
                   mb: 4,
+                  textDecoration: "underline",
                 }}
               >
                 <TwitterSvg />
@@ -309,12 +327,17 @@ export const GetInTouch = () => {
                     fontWeight: "400",
                     lineHeight: "19.2px",
                     textDecoration: "underline",
+                    color: "white",
                   }}
                 >
                   iotdefender
                 </Typography>
               </Box>
               <Box
+                component="a"
+                href="https://www.linkedin.com/company/wolfberryllc/"
+                target="_blank"
+                rel="noopener noreferrer"
                 sx={{
                   display: "flex",
                   alignItems: "center",
@@ -330,6 +353,7 @@ export const GetInTouch = () => {
                     fontWeight: "400",
                     lineHeight: "19.2px",
                     textDecoration: "underline",
+                    color: "white",
                   }}
                 >
                   iotdefender
