@@ -46,7 +46,7 @@ export const HowItWork = () => {
             <DotIcon />
             <h3 className="heading">How it works </h3>
           </div>
-          <p>
+          <p >
             IoT Defender provides easily onboarding process. Select your desired
             subscription plan after which set up your device(s), you will also
             receive an API Security token key, set up your device(s), and mint

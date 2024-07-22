@@ -46,7 +46,7 @@
 
 .OurFeatures .card_container {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: stretch !important;
   gap: 40px;
   flex-wrap: wrap;
