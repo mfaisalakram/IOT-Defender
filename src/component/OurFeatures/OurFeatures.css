@@ -99,6 +99,13 @@
   color: #fff !important;
 }
 
+@media (max-width: 1400px) {
+  .OurFeatures {
+    background-size: 120% 120%;
+    background-position: center 0%;
+  }
+}
+
 @media (max-width: 991.98px) {
 }
 

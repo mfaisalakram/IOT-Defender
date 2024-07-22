@@ -150,6 +150,10 @@
     top: auto;
     transform: translateX(-50%) rotate(90deg);
   }
+  .HowItWork .card_container .global-block-wrapper_top {
+    flex: 0 0 calc(50% - 26.67px);
+    height: auto !important;
+  }
 }
 
 @media (max-width: 575.98px) {
@@ -182,5 +186,9 @@
   .HowItWork .card_inner .description {
     font-size: 18px;
     line-height: 23.4px;
+  }
+  .HowItWork .card_container .global-block-wrapper_top {
+    flex: 0 0 calc(100% - 26.67px);
+    height: auto !important;
   }
 }

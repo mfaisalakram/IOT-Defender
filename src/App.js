@@ -35,7 +35,7 @@ function App() {
           <Featured />
           <HowItWork />
           <OurFeatures />
-          <MembershipPlan />
+          {/* <MembershipPlan /> */}
           <Faq />
           <GetInTouch />
           <Footer />

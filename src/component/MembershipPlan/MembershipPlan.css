@@ -129,7 +129,6 @@
   padding: 8px 24px;
   width: 100%;
 }
-.MembershipPlan .swiper-backface-hidden .swiper-slide {
-  /* width: auto !important; */
-  width: calc((100% - (30px * 3)) / 4) !important;
+
+@media (max-width: 575.98px) {
 }
