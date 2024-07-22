@@ -108,8 +108,11 @@ export const Footer = () => {
             >
               Follow Us
             </Typography>
-            <Box
-              sx={{ display: "flex", alignItems: "center", marginBottom: 4 }}
+            <Box  component="a"
+                href="https://x.com/wolfberryllc"
+                target="_blank"
+                rel="noopener noreferrer"
+              sx={{ display: "flex", alignItems: "center", marginBottom: 4,textDecoration: "none", }}
             >
               <img src="/assets/footer-logo.png" alt="" />
               <Typography
@@ -119,12 +122,16 @@ export const Footer = () => {
                   fontSize: "18px",
                   marginLeft: 1,
                   textDecoration: "underline",
+                  color: "white",
                 }}
               >
                 iotdefender
               </Typography>
             </Box>
-            <Box
+            <Box component="a"
+                href="https://www.linkedin.com/company/wolfberryllc/"
+                target="_blank"
+                rel="noopener noreferrer"
               sx={{ display: "flex", alignItems: "center", marginBottom: 4 }}
             >
               <img src="/assets/footer-logo.png" alt="" />
@@ -135,6 +142,7 @@ export const Footer = () => {
                   fontSize: "18px",
                   marginLeft: 1,
                   textDecoration: "underline",
+                  color: "white",
                 }}
               >
                 iotdefender

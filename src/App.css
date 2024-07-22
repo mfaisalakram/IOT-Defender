@@ -36,15 +36,15 @@ body {
   border-image: linear-gradient(to bottom, #3d5075, #0a162f) 1;
 } */
 .global-block-wrapper {
-  background: linear-gradient(to bottom, #3d5075, #0a162f);
-  border-radius: 19px;
-  padding: 2.5px;
+  background: linear-gradient(to bottom, #3d5075, #0a162f) !important;
+  border-radius: 19px !important;
+  padding: 2.5px !important;
 }
 
 .global-block {
-  background-color: var(--blue-block-background);
-  border-radius: 17px;
-  padding: 10px;
+  background-color: var(--blue-block-background) !important;
+  border-radius: 17px !important;
+  padding: 10px !important;
 }
 
 .global-block-wrapper_top {

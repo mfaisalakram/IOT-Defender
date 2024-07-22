@@ -14,7 +14,7 @@ export const MembershipPlan = () => {
   const MembershipData = [
     {
       id: 1,
-      title: "Basic",
+      title: "Free",
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
       type: "Popular",
       currency: "$",
@@ -25,14 +25,17 @@ export const MembershipPlan = () => {
           title: "5000 API Calls",
         },
         {
-          title: "Unlimited Bandwidth",
+          title: "10 Sensors per device",
+        },
+        {
+          title: "1 Device",
         },
       ],
       buttonText: "Get Started",
     },
     {
       id: 2,
-      title: "Copper",
+      title: "Silver",
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
       type: "Popular",
       currency: "$",
@@ -43,14 +46,14 @@ export const MembershipPlan = () => {
           title: "25,000 API Calls",
         },
         {
-          title: "Unlimited Bandwidth",
+          title: "10 Devices",
         },
       ],
       buttonText: "Get Started",
     },
     {
       id: 3,
-      title: "Silver",
+      title: "Gold",
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
       type: "Popular",
       currency: "$",
@@ -61,14 +64,17 @@ export const MembershipPlan = () => {
           title: "50,000 API Calls",
         },
         {
-          title: "Unlimited Bandwidth",
+          title: "25 Devices",
+        },
+        {
+          title: "10 Sensors per device",
         },
       ],
       buttonText: "Get Started",
     },
     {
       id: 4,
-      title: "Gold",
+      title: "Platinum",
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
       type: "Popular",
       currency: "$",
@@ -79,14 +85,17 @@ export const MembershipPlan = () => {
           title: "100,000 API Calls",
         },
         {
-          title: "Unlimited Bandwidth",
+          title: "50 Devices",
+        },
+        {
+          title: "10 Sensors per device",
         },
       ],
       buttonText: "Get Started",
     },
     {
       id: 5,
-      title: "Gold",
+      title: "Enterprise",
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
       type: "Popular",
       currency: "$",
@@ -94,32 +103,35 @@ export const MembershipPlan = () => {
       period: "month",
       items: [
         {
-          title: "100,000 API Calls",
+          title: "1,000,000+ API Calls",
         },
         {
-          title: "Unlimited Bandwidth",
+          title: "10 Sensors per device",
+        },
+        {
+          title: "100 Devices",
         },
       ],
       buttonText: "Get Started",
     },
-    {
-      id: 6,
-      title: "Gold",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      type: "Popular",
-      currency: "$",
-      price: 0,
-      period: "month",
-      items: [
-        {
-          title: "100,000 API Calls",
-        },
-        {
-          title: "Unlimited Bandwidth",
-        },
-      ],
-      buttonText: "Get Started",
-    },
+    // {
+    //   id: 6,
+    //   title: "Gold",
+    //   description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    //   type: "Popular",
+    //   currency: "$",
+    //   price: 0,
+    //   period: "month",
+    //   items: [
+    //     {
+    //       title: "100,000 API Calls",
+    //     },
+    //     {
+    //       title: "Unlimited Bandwidth",
+    //     },
+    //   ],
+    //   buttonText: "Get Started",
+    // },
   ];
 
   return (
@@ -150,7 +162,7 @@ export const MembershipPlan = () => {
                       <div className="card-inner">
                         <div className="card-brand">
                           <div className="title">{item?.title}</div>
-                          <div className="description">{item?.description}</div>
+                          {/* <div className="description">{item?.description}</div> */}
                           <div className="price-container">
                             <span className="currency">{item?.currency}</span>
                             <span className="price">{item?.price}</span>

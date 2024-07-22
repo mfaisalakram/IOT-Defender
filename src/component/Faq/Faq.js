@@ -21,22 +21,47 @@ export const Faq = () => {
     {
       question: "Why do I need IoT Defender for my IoT devices?",
       answer:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.",
+        "IoT devices are often targeted by cyberattacks due to their typically weaker security measures. IoT Defender helps protect these devices from vulnerabilities, ensuring they operate securely and reliably within your network.",
     },
     {
       question: "How does IoT Defender protect my devices?",
       answer:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.",
+        "IoT Defender employs cutting-edge technologies to safeguard your IoT devices. It integrates a distributed ledger for secure data transactions, artificial intelligence (AI) for intelligent threat detection, and stores critical data as NFTs (Non-Fungible Tokens) to ensure its integrity and authenticity.",
     },
     {
       question: "What types of IoT devices does IoT Defender support?",
       answer:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.",
+        "IoT Defender supports a wide range of IoT devices, including smart home gadgets, industrial IoT equipment, healthcare devices, and more. It’s designed to be flexible and scalable to meet the needs of various IoT environments.",
     },
     {
       question: "Is IoT Defender difficult to set up?",
       answer:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.",
+    },
+    {
+      question: "Does IoT Defender provide real-time monitoring?",
+      answer:
+        "Yes, IoT Defender offers real-time monitoring, giving you up-to-date insights into the security status of your IoT devices and allowing you to respond to threats immediately.",
+    },
+    {
+      question: "How does IoT Defender handle updates and patches?",
+      answer:
+        "IoT Defender automatically updates itself to the latest security definitions and patches, ensuring your devices are always protected against the newest threats.",
+    },
+    {
+      question: "Can I manage multiple IoT devices with IoT Defender?",
+      answer:
+        "Absolutely. IoT Defender provides a centralized dashboard where you can monitor and manage multiple IoT devices, making it easy to keep track of the security status across your entire network.",
+    },
+    {
+      question: "Is IoT Defender suitable for both personal and business use",
+      answer:
+        "Yes, IoT Defender is designed to be versatile, catering to both personal IoT devices and large-scale business deployments.",
+    },
+    {
+      question: "What support does IoT Defender offer?",
+      answer:
+        "IoT Defender provides comprehensive support, including a detailed knowledge base, customer service, and technical assistance to help you with any issues or questions you might have.",
     },
   ];
 
@@ -95,12 +120,16 @@ export const Faq = () => {
 
       <Box>
         {faqData?.map((item, index) => (
-          <Box className="global-block-wrapper">
+          <Box
+            className="global-block-wrapper"
+            sx={{
+              background: "transparent",
+              mb: 2,
+            }}
+          >
             <Accordion
               sx={{
                 background: "transparent",
-                borderRadius: "19px",
-                mb: 2,
                 p: 1,
               }}
               key={index}
@@ -122,9 +151,8 @@ export const Faq = () => {
                 <Typography
                   sx={{
                     color: "white",
-                    fontWeight: "700",
-                    fontSize: { xs: "18px", md: "24px" },
-                    lineHeight: "28.8px",
+                    fontSize: { xs: "16px", md: "20px" },
+                    textAlign: "start",
                   }}
                 >
                   {item.question}
