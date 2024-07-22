@@ -41,7 +41,7 @@ export const Faq = () => {
   ];
 
   const [allExpanded, setAllExpanded] = useState(false);
-  const [expandedPanels, setExpandedPanels] = useState([0]); // Open the first accordion by default
+  const [expandedPanels, setExpandedPanels] = useState([0]);
 
   const handleExpandAll = () => {
     setAllExpanded((prev) => !prev);
@@ -59,7 +59,8 @@ export const Faq = () => {
   };
 
   return (
-    <Box className={"global-container"}
+    <Box
+      className={"global-container"}
       sx={{
         // maxWidth: { xs: "1400px !important", md: "1001px" },
         padding: "20px",
@@ -79,49 +80,69 @@ export const Faq = () => {
 
         <Typography
           className="main-heading"
-          sx={{ fontSize: { xs: "24px", md: "40px" }, marginLeft: 1, fontWeight: "700" }}
+          sx={{
+            fontSize: { xs: "24px", md: "40px" },
+            marginLeft: 1,
+            fontWeight: "700",
+          }}
         >
           FAQ
         </Typography>
       </Box>
+      {/* <Box className="global-block-wrapper"> */}
+
+      {/* <Box className="global-block"> */}
+
       <Box>
-        {faqData.map((item, index) => (
-          <Accordion
-            sx={{ background: "#0c0919", borderRadius: "20px", mb: 2, p: 1 }}
-            key={index}
-            expanded={expandedPanels.includes(index)}
-          >
-            <AccordionSummary
-              expandIcon={
-                <ExpandMoreIcon
-                  height="30px"
-                  width="30px"
-                  sx={{ color: "white", fontSize: "30px" }}
-                />
-              }
-              aria-controls={`panel${index}-content`}
-              id={`panel${index}-header`}
-              onClick={() => handleToggle(index)}
+        {faqData?.map((item, index) => (
+          <Box className="global-block-wrapper">
+            <Accordion
+              sx={{
+                background: "transparent",
+                borderRadius: "19px",
+                mb: 2,
+                p: 1,
+              }}
+              key={index}
+              expanded={expandedPanels.includes(index)}
+              className="global-block"
             >
-              <Typography
-                sx={{
-                  color: "white",
-                  fontWeight: "700",
-                  fontSize: { xs: "18px", md: "24px" },
-                  lineHeight: "28.8px",
-                }}
+              <AccordionSummary
+                expandIcon={
+                  <ExpandMoreIcon
+                    height="30px"
+                    width="30px"
+                    sx={{ color: "white", fontSize: "30px" }}
+                  />
+                }
+                aria-controls={`panel${index}-content`}
+                id={`panel${index}-header`}
+                onClick={() => handleToggle(index)}
               >
-                {item.question}
-              </Typography>
-            </AccordionSummary>
-            <AccordionDetails>
-              <Typography
-                sx={{ color: "white", fontSize: { xs: "16px", md: "20px" }, textAlign: "start" }}
-              >
-                {item.answer}
-              </Typography>
-            </AccordionDetails>
-          </Accordion>
+                <Typography
+                  sx={{
+                    color: "white",
+                    fontWeight: "700",
+                    fontSize: { xs: "18px", md: "24px" },
+                    lineHeight: "28.8px",
+                  }}
+                >
+                  {item.question}
+                </Typography>
+              </AccordionSummary>
+              <AccordionDetails>
+                <Typography
+                  sx={{
+                    color: "white",
+                    fontSize: { xs: "16px", md: "20px" },
+                    textAlign: "start",
+                  }}
+                >
+                  {item.answer}
+                </Typography>
+              </AccordionDetails>
+            </Accordion>
+          </Box>
         ))}
         <Button
           sx={{
