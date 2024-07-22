@@ -6,7 +6,7 @@
 .Featured .feature-block {
   width: 100%;
   height: fit-content;
-  padding: 30px;
+  padding: 30px !important;
 }
 
 .Featured .heading-block {
