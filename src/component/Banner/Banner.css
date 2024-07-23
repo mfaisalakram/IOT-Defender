@@ -1,8 +1,13 @@
 .Banner {
   position: relative;
+  background: url("../../assets/gif/banner-gif.gif");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right;
+  height: 70vh;
+  padding-top: 200px;
 }
-.Banner .conttt {
-}
+
 .Banner .brand-content {
   width: 500px;
   text-align: left;
@@ -61,10 +66,12 @@
   box-shadow: inset 0px 10px 10px -10px rgba(0, 0, 0, 0.5);
   height: fit-content;
   height: 100%;
+  display: none;
 }
 
 .Banner .gif-container img {
   width: 100%;
+  object-fit: cover;
 }
 
 /* Media Queries */
@@ -72,6 +79,7 @@
 @media (max-width: 575.98px) {
   .Banner .gif-container {
     position: unset;
+    display: block;
   }
   .Banner .brand-content .banner-heading {
     font-size: 38px;
@@ -89,5 +97,10 @@
   .Banner .brand-content .button-block .learn-more-button {
     font-size: 16px;
     line-height: 19.36px;
+  }
+
+  .Banner {
+    background: none;
+    padding-top: 120px;
   }
 }

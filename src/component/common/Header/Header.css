@@ -1,0 +1,24 @@
+.Header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+}
+.Header .book-demo-button,
+.mobile-version .book-demo-button {
+  font-family: "Inter Tight";
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21.78px;
+  color: var(--black-primary);
+  border-radius: 100px;
+  padding: 8px 24px;
+  background-color: var(--green-primary) !important;
+  outline: none !important;
+  border: none !important;
+}
+
+.mobile-version .book-demo-button {
+  width: 100%;
+}

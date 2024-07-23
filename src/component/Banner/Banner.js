@@ -9,7 +9,7 @@ export const Banner = () => {
     <div className="Banner">
       <div className="global-container">
         <div className="row conttt">
-          <div className="brand-content col-sm-12 col-md-6 col-lg-6">
+          <div className="brand-content col-sm-12 col-md-12 col-lg-6">
             <h1 className="banner-heading">Revolutionize IoT Data Security</h1>
             <p className="banner-text">
               <span className="highlight-text">Empower your</span> IoT solutions
@@ -26,7 +26,7 @@ export const Banner = () => {
               </button>
             </div>
           </div>
-          <div className="gif-container col-sm-12 col-md-6 col-lg-6 mt-4">
+          <div className="gif-container mt-4">
             <img src={banner_gif} />
           </div>
         </div>

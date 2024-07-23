@@ -86,10 +86,10 @@
   position: relative;
   color: white;
   border-radius: 20px;
-  /* clip-path: polygon(0 0, calc(100% - 20px) 0, 100% 20px, 100% 100%, 0% 100%); */
-  /* clip-path: inset(0 0 0 0 round 0 20px 0 0); */
-  /* transform: translate(50%, -50%); */
-  clip-path: url(#clipPath);
+  clip-path: polygon(0 0, calc(100% - 20px) 0, 100% 20px, 100% 100%, 0% 100%);
+
+  /* clip-path: path("M 0 0 L 100% 0 L 100% 70% Q 95% 80% 80% 80% L 70% 80% Q 55% 80% 50% 100% L 0 100% Z");
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);  */
 }
 
 .HowItWork .button-container {
@@ -157,6 +157,10 @@
 }
 
 @media (max-width: 575.98px) {
+  .HowItWork {
+    padding: 25px 0px;
+    margin: 0px 0px;
+  }
   .HowItWork .head-content .heading-container h3 {
     font-size: 32px;
     line-height: 68px;
@@ -188,7 +192,7 @@
     line-height: 23.4px;
   }
   .HowItWork .card_container .global-block-wrapper_top {
-    flex: 0 0 calc(100% - 26.67px);
+    flex: 0 0 calc(100%);
     height: auto !important;
   }
   .HowItWork .button-container .book-demo-button {

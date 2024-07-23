@@ -4,9 +4,9 @@ import { CodeIcon } from "../../assets/svgs/code_icon";
 import { MintIcon } from "../../assets/svgs/mint_icon";
 import { MonitorIcon } from "../../assets/svgs/monitor_icon";
 import { TempringIcon } from "../../assets/svgs/tampering_icon";
+import { RightArrowIcon } from "../../assets/svgs/right_arrow_icon";
 
 import "./HowItWork.css";
-import { RightArrowIcon } from "../../assets/svgs/right_arrow_icon";
 
 export const HowItWork = () => {
   const GuidList = [
@@ -46,7 +46,7 @@ export const HowItWork = () => {
             <DotIcon />
             <h3 className="heading">How it works </h3>
           </div>
-          <p >
+          <p>
             IoT Defender provides easily onboarding process. Select your desired
             subscription plan after which set up your device(s), you will also
             receive an API Security token key, set up your device(s), and mint

@@ -9,7 +9,7 @@ export const Featured = () => {
       <div className="global-container">
         <div className="global-block-wrapper">
           <div className="feature-block global-block">
-            <div className="heading-block d-flex align-item-center gap-2">
+            <div className="heading-block d-flex align-items-center gap-2">
               <DotIcon />
               <h6 className="main-heading">Blockchain-Enabled Platform</h6>
             </div>
@@ -27,7 +27,7 @@ export const Featured = () => {
               </span>{" "}
               within a permissioned network.
             </p>
-            <p className="bottom-text ">
+            <p className="bottom-text">
               Experience seamless communication and scalability with our{" "}
               <br className="d-sm-none d-md-block d-none" />
               state-of-the-art cross-compatible platform.

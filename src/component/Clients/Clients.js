@@ -1,9 +1,5 @@
 import React, { useEffect } from "react";
-import Swiper from "swiper";
-// import Swiper and modules styles
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
+import Swiper from "https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs";
 
 import amazone from "../../assets/client_logos/amazone.png";
 import frame from "../../assets/client_logos/frame.png";
@@ -16,7 +12,7 @@ import "./Clients.css";
 
 export const Clients = () => {
   useEffect(() => {
-    var swiper = new Swiper(".mySwiper", {
+    const swiper = new Swiper(".mySwiper", {
       loop: true,
       slidesPerView: 1,
       autoplay: {
@@ -32,11 +28,11 @@ export const Clients = () => {
           slidesPerView: 4,
           spaceBetween: 20,
         },
-        500: {
+        600: {
           slidesPerView: 3,
           spaceBetween: 20,
         },
-        400: {
+        440: {
           slidesPerView: 2,
           spaceBetween: 20,
         },

@@ -7,6 +7,7 @@
   width: 100%;
   height: fit-content;
   padding: 30px !important;
+  text-align: start;
 }
 
 .Featured .heading-block {
@@ -35,6 +36,9 @@
 }
 
 @media (max-width: 575.98px) {
+  .Featured {
+    padding: 25px 0;
+  }
   .Featured .feature-block .main-text {
     font-size: 20px;
     line-height: 24px;
@@ -47,5 +51,27 @@
     font-family: "Inter Tight";
     font-size: 18px;
     line-height: 21.78px;
+    padding-top: 20px;
+    border-top: 1px solid var(--while-primary);
+    margin-left: 30px;
+  }
+  .Featured .global-block-wrapper {
+    background: none !important;
+  }
+  .Featured .global-block {
+    background: none !important;
+  }
+  .Featured .feature-block .main-text {
+    text-align: start;
+  }
+  .Featured .feature-block {
+    padding: 0 !important;
+  }
+
+  .Featured .feature-block svg {
+    width: 20px;
+  }
+  .Featured .heading-block {
+    gap: 10px;
   }
 }
