@@ -42,7 +42,18 @@ export const GetInTouch = () => {
               <DotIcon />
               <Typography
                 className="main-heading"
-                sx={{ fontSize: "40px", marginLeft: 1, fontWeight: "700" }}
+                sx={{
+                  fontSize: "40px",
+                  marginLeft: 1,
+                  fontWeight: "700",
+                  fontFamily: "Scandla-Bold",
+                  background:
+                    "linear-gradient(to right, white 0%, #9595b2 100%)",
+                  WebkitBackgroundClip: "text",
+                  WebkitTextFillColor: "transparent",
+                  backgroundClip: "text",
+                  textFillColor: "transparent",
+                }}
               >
                 Get in touch
               </Typography>
@@ -53,6 +64,7 @@ export const GetInTouch = () => {
                 fontWeight: "400",
                 lineHeight: "24px",
                 mb: 4,
+                fontFamily: "Inter Tight",
               }}
             >
               Our team specializes in custom development services and private
@@ -148,134 +160,145 @@ export const GetInTouch = () => {
             </Box>
           </Grid>
           <Grid item xs={12} md={8}>
-            <Box
-              sx={{
-                background: "#0A162F",
-                p: 3,
-                color: "white",
-                borderRadius: "20px",
-                maxWidth: "882px",
-                maxHeight: "493px",
-              }}
-            >
-              <form onSubmit={handleSubmit}>
-                <Box
-                  sx={{ display: "flex", flexDirection: "row", marginBlock: 3 }}
-                >
-                  <TextField
-                    InputLabelProps={{ style: { color: "#82868F" } }}
-                    InputProps={{
-                      disableUnderline: true,
-                      color: "white",
-                      style: {
-                        color: "white",
-                        background: "#040D1F",
-                        borderRadius: "10px",
-                      },
-                    }}
-                    variant="filled"
-                    name="name"
-                    label="Name"
-                    fullWidth
-                    value={formValues.name}
-                    onChange={handleChange}
-                    sx={{ mr: 2 }}
-                  />
-                  <TextField
-                    InputLabelProps={{ style: { color: "#82868F" } }}
-                    InputProps={{
-                      disableUnderline: true,
-                      color: "white",
-                      style: {
-                        color: "white",
-                        background: "#040D1F",
-                        borderRadius: "10px",
-                      },
-                    }}
-                    variant="filled"
-                    name="email"
-                    label="Email"
-                    fullWidth
-                    value={formValues.email}
-                    onChange={handleChange}
-                  />
-                </Box>
-                <Box sx={{ display: "flex", flexDirection: "row" }}>
-                  <TextField
-                    borderRadius={"50px"}
-                    InputLabelProps={{ style: { color: "#82868F" } }}
-                    InputProps={{
-                      disableUnderline: true,
-                      color: "white",
-                      style: {
-                        color: "white",
-                        background: "#040D1F",
-                        borderRadius: "10px",
-                        width: "775px !important",
-                      },
-                    }}
-                    name="telephone"
-                    label="Telephone"
-                    variant="filled"
-                    fullWidth
-                    value={formValues.telephone}
-                    onChange={handleChange}
+            <Box className="global-block-wrapper_top">
+              <Box
+                sx={{
+                  background: "#0A162F !important",
+                  p: 3,
+                  color: "white",
+                  borderRadius: "20px",
+                  maxWidth: "882px",
+                  maxHeight: "493px",
+                }}
+                className="global-block_top form"
+              >
+                <form onSubmit={handleSubmit}>
+                  <Box
                     sx={{
-                      mr: 2,
-                      width: "775px !important",
-                      marginRight: "0px !important",
+                      display: "flex",
+                      flexDirection: "row",
+                      marginBlock: 3,
                     }}
-                  />
-                </Box>
-                <Box sx={{ marginBlock: 3, borderRadius: "10px" }}>
-                  <TextField
-                    InputLabelProps={{ style: { color: "#82868F" } }}
-                    InputProps={{
-                      disableUnderline: true,
-                      color: "white",
-                      style: {
-                        color: "white",
-                        background: "#040D1F",
-                        borderRadius: "10px",
-                      },
-                    }}
-                    name="description"
-                    label="Tell us a little about what you’re looking for..."
-                    variant="filled"
-                    fullWidth
-                    multiline
-                    rows={5}
-                    value={formValues.description}
-                    onChange={handleChange}
-                  />
-                </Box>
-
-                <Box sx={{ display: "flex", justifyContent: "end", mt: 4 }}>
-                  <Button
-                    type="submit"
-                    sx={{
-                      fontSize: { xs: "16px", md: "18px" },
-                      fontWeight: "700",
-                      lineHeight: "21.78px",
-                      color: "black",
-                      background: "#C9E265",
-                      borderRadius: "100px",
-                      "&:hover": {
-                        backgroundColor: "#C9E265",
-                        color: "black",
-                      },
-                      "&:focus": {
-                        outline: "none",
-                      },
-                      width: { xs: "168px", md: "187px" },
-                      height: { xs: "40px", md: "46px" },
-                    }}
-                    variant="contained"
                   >
-                    Send message
-                  </Button>
-                </Box>
-              </form>
+                    <TextField
+                      InputLabelProps={{ style: { color: "#82868F" } }}
+                      InputProps={{
+                        disableUnderline: true,
+                        color: "white",
+                        style: {
+                          color: "white",
+                          background: "#040D1F",
+                          borderRadius: "10px",
+                        },
+                      }}
+                      variant="filled"
+                      name="name"
+                      label="Name"
+                      fullWidth
+                      value={formValues.name}
+                      onChange={handleChange}
+                      sx={{ mr: 2, fontFamily: "Inter Tight" }}
+                    />
+                    <TextField
+                      InputLabelProps={{ style: { color: "#82868F" } }}
+                      InputProps={{
+                        disableUnderline: true,
+                        color: "white",
+                        style: {
+                          color: "white",
+                          background: "#040D1F",
+                          borderRadius: "10px",
+                        },
+                      }}
+                      variant="filled"
+                      name="email"
+                      label="Email"
+                      fullWidth
+                      value={formValues.email}
+                      onChange={handleChange}
+                      sx={{ fontFamily: "Inter Tight" }}
+                    />
+                  </Box>
+                  <Box sx={{ display: "flex", flexDirection: "row" }}>
+                    <TextField
+                      borderRadius={"50px"}
+                      InputLabelProps={{ style: { color: "#82868F" } }}
+                      InputProps={{
+                        disableUnderline: true,
+                        color: "white",
+                        style: {
+                          color: "white",
+                          background: "#040D1F",
+                          borderRadius: "10px",
+                          width: "775px !important",
+                        },
+                      }}
+                      name="telephone"
+                      label="Telephone"
+                      variant="filled"
+                      fullWidth
+                      value={formValues.telephone}
+                      onChange={handleChange}
+                      sx={{
+                        mr: 2,
+                        width: "775px !important",
+                        marginRight: "0px !important",
+                        fontFamily: "Inter Tight",
+                      }}
+                    />
+                  </Box>
+                  <Box sx={{ marginBlock: 3, borderRadius: "10px" }}>
+                    <TextField
+                      InputLabelProps={{ style: { color: "#82868F" } }}
+                      InputProps={{
+                        disableUnderline: true,
+                        color: "white",
+                        style: {
+                          color: "white",
+                          background: "#040D1F",
+                          borderRadius: "10px",
+                        },
+                      }}
+                      name="description"
+                      label="Tell us a little about what you’re looking for..."
+                      variant="filled"
+                      fullWidth
+                      multiline
+                      rows={5}
+                      value={formValues.description}
+                      onChange={handleChange}
+                      sx={{ fontFamily: "Inter Tight" }}
+                    />
+                  </Box>
+
+                  <Box sx={{ display: "flex", justifyContent: "end", mt: 4 }}>
+                    <Button
+                      type="submit"
+                      sx={{
+                        fontSize: { xs: "16px", md: "18px" },
+                        fontWeight: "700",
+                        lineHeight: "21.78px",
+                        fontFamily: "Inter Tight",
+                        color: "black",
+                        background: "#C9E265",
+                        borderRadius: "100px",
+                        "&:hover": {
+                          backgroundColor: "#C9E265",
+                          color: "black",
+                        },
+                        "&:focus": {
+                          outline: "none",
+                        },
+                        width: { xs: "168px", md: "187px" },
+                        height: { xs: "40px", md: "46px" },
+                      }}
+                      variant="contained"
+                    >
+                      Send message
+                    </Button>
+                  </Box>
+                </form>
+              </Box>
             </Box>
             <Box
               sx={{
