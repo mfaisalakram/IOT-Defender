@@ -92,6 +92,7 @@ export const Faq = () => {
         margin: "auto",
         overflow: "hidden", // Ensures content does not overflow
       }}
+      id="FAQ"
     >
       <Box
         sx={{

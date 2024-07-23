@@ -135,7 +135,7 @@ export const MembershipPlan = () => {
   ];
 
   return (
-    <div className="MembershipPlan">
+    <div className="MembershipPlan" id="Membership">
       <div className="global-container">
         <div className="head-content">
           <div className="heading-container">

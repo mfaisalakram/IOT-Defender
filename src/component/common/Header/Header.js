@@ -9,6 +9,7 @@ import {
   ListItemText,
   Typography,
   Divider,
+  Link,
 } from "@mui/material";
 import CloseIcon from "@mui/icons-material/Close";
 import MenuIcon from "@mui/icons-material/Menu";
@@ -34,20 +35,20 @@ const Header = () => {
   };
 
   const menuItems = [
-    { text: "Data Security" },
-    { text: "Process" },
-    { text: "Features" },
-    { text: "Membership" },
-    { text: "FAQ" },
-    { text: "Book a demo" },
+    { text: "Data Security", linkTo: "#data-security" },
+    { text: "Process", linkTo: "#Process" },
+    { text: "Features", linkTo: "#Features" },
+    { text: "Membership", linkTo: "#Membership" },
+    { text: "FAQ", linkTo: "#FAQ" },
+    { text: "Book a demo", linkTo: "#Book-a-demo" },
   ];
 
   const menuItemsMobile = [
-    { text: "Data Security" },
-    { text: "Process" },
-    { text: "Features" },
-    { text: "Membership" },
-    { text: "FAQ" },
+    { text: "Data Security", linkTo: "#data-security" },
+    { text: "Process", linkTo: "#Process" },
+    { text: "Features", linkTo: "#Features" },
+    { text: "Membership", linkTo: "#Membership" },
+    { text: "FAQ", linkTo: "#FAQ" },
   ];
 
   return (
@@ -84,18 +85,27 @@ const Header = () => {
           }}
         >
           {menuItems.slice(0, -1).map((item, index) => (
-            <Typography
+            <Link
               key={index}
+              href={item.linkTo}
               sx={{
-                fontSize: "18px",
-                fontWeight: "700",
-                fontFamily: "Inter Tight",
-                lineHeight: "21.70px",
+                textDecoration: "none", // remove underline
+                color: "white", // keep text color
               }}
             >
-              {item.text}
-            </Typography>
+              <Typography
+                sx={{
+                  fontSize: "18px",
+                  fontWeight: "700",
+                  fontFamily: "Inter Tight",
+                  lineHeight: "21.70px",
+                }}
+              >
+                {item.text}
+              </Typography>
+            </Link>
           ))}
+
           <Button
             // sx={{
             //   fontSize: "18px",
@@ -184,22 +194,32 @@ const Header = () => {
               padding: 0,
               display: "flex",
               flexDirection: "column",
-              alignItems: "center",
+              alignItems: "start",
               marginTop: "20px",
             }}
           >
             {/*  mobile version */}
             {menuItemsMobile.map((item, index) => (
-              <ListItem
+              <Link
                 key={index}
-                onClick={toggleDrawer(false)}
-                sx={{ color: "white", paddingLeft: "0px !important" }}
+                href={item.linkTo}
+                sx={{
+                  textDecoration: "none", // remove underline
+                  color: "white", // keep text color
+                  textAlign:"start"
+                }}
               >
-                <ListItemText
-                  primary={item.text}
-                  sx={{ paddingLeft: "0px !important" }}
-                />
-              </ListItem>
+                <ListItem
+                  key={index}
+                  onClick={toggleDrawer(false)}
+                  sx={{ color: "white", paddingLeft: "0px !important" }}
+                >
+                  <ListItemText
+                    primary={item.text}
+                    sx={{ paddingLeft: "0px !important" }}
+                  />
+                </ListItem>
+              </Link>
             ))}
           </List>
           <Box

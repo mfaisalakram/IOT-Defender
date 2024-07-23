@@ -6,7 +6,7 @@ import "./Banner.css";
 
 export const Banner = () => {
   return (
-    <div className="Banner">
+    <div className="Banner" id="data-security">
       <div className="global-container">
         <div className="row conttt">
           <div className="brand-content col-sm-12 col-md-12 col-lg-6">

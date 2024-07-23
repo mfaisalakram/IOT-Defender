@@ -5,7 +5,7 @@ import "./Featured.css";
 
 export const Featured = () => {
   return (
-    <div className="Featured">
+    <div className="Featured" id="Features">
       <div className="global-container">
         <div className="global-block-wrapper">
           <div className="feature-block global-block">
