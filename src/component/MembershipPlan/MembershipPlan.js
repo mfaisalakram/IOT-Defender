@@ -1,14 +1,11 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { DotIcon } from "../../assets/svgs/dot_icon";
 import TickGreenIcon from "../../assets/svgs/tick_green_icon";
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
-import "swiper/css/pagination";
-import "swiper/css/navigation";
-import { Pagination, Navigation, Autoplay } from "swiper/modules";
-import "./MembershipPlan.css";
+
+import Swiper from "https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs";
+
 import { Box } from "@mui/material";
-import PlayCircleOutlineRoundedIcon from "@mui/icons-material/PlayCircleOutlineRounded";
+import "./MembershipPlan.css";
 
 export const MembershipPlan = () => {
   const MembershipData = [
@@ -114,25 +111,40 @@ export const MembershipPlan = () => {
       ],
       buttonText: "Get Started",
     },
-    // {
-    //   id: 6,
-    //   title: "Gold",
-    //   description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    //   type: "Popular",
-    //   currency: "$",
-    //   price: 0,
-    //   period: "month",
-    //   items: [
-    //     {
-    //       title: "100,000 API Calls",
-    //     },
-    //     {
-    //       title: "Unlimited Bandwidth",
-    //     },
-    //   ],
-    //   buttonText: "Get Started",
-    // },
   ];
+
+  useEffect(() => {
+    const swiper = new Swiper(".mySwiper", {
+      loop: true,
+      direction: "horizontal",
+      breakpoints: {
+        1200: {
+          slidesPerView: 6,
+          spaceBetween: 20,
+        },
+        800: {
+          slidesPerView: 4,
+          spaceBetween: 20,
+        },
+        600: {
+          slidesPerView: 3,
+          spaceBetween: 20,
+        },
+        440: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
+        300: {
+          slidesPerView: 1,
+          spaceBetween: 20,
+        },
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  }, []);
 
   return (
     <div className="MembershipPlan" id="Membership">
@@ -144,45 +156,17 @@ export const MembershipPlan = () => {
           </div>
         </div>
 
-        <div className="swiper-container">
-          <Swiper
-            slidesPerView={4}
-            spaceBetween={30}
-            // loop={true}
-            watchOverflow={false}
-            navigation={{ nextEl: ".arrow-left", prevEl: ".arrow-right" }}
-            modules={[Pagination, Navigation, Autoplay]}
-            className="mySwiper"
-            breakpoints={{
-              320: {
-                slidesPerView: 1,
-                spaceBetween: 20,
-              },
-
-              400: {
-                slidesPerView: 2,
-                spaceBetween: 20,
-              },
-
-              800: {
-                slidesPerView: 3,
-                spaceBetween: 20,
-              },
-              1300: {
-                slidesPerView: 4,
-                spaceBetween: 20,
-              },
-            }}
-          >
+        <div className="swiper mySwiper">
+          <div className="swiper-wrapper">
             {MembershipData?.map((item, index) => (
-              <SwiperSlide key={index}>
+              <div key={index} className="swiper-slide">
                 <div className="global-block-wrapper_top">
                   <div className="global-block_top">
                     <div className="card-outer">
                       <div className="card-inner">
                         <div className="card-brand">
                           <div className="title">{item?.title}</div>
-                          {/* <div className="description">{item?.description}</div> */}
+                          <div className="description">{item?.description}</div>
                           <div className="price-container">
                             <span className="currency">{item?.currency}</span>
                             <span className="price">{item?.price}</span>
@@ -208,9 +192,11 @@ export const MembershipPlan = () => {
                     </div>
                   </div>
                 </div>
-              </SwiperSlide>
+              </div>
             ))}
-          </Swiper>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
         </div>
         <Box
           sx={{
