@@ -59,8 +59,8 @@ export const HowItWork = () => {
         <div className="card_container">
           {GuidList?.map((item, index) => {
             return (
-              <div className="global-block-wrapper_top">
-                <div className="card_outer global-block_top">
+              <div className="card_single">
+                <div className="card_outer">
                   <div className="arrow-icon-container">
                     <RightArrowIcon />
                   </div>

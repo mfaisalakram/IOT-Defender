@@ -21,7 +21,7 @@ export const Clients = () => {
       },
       breakpoints: {
         1200: {
-          slidesPerView: 6,
+          slidesPerView: 5,
           spaceBetween: 20,
         },
         800: {
@@ -34,10 +34,6 @@ export const Clients = () => {
         },
         440: {
           slidesPerView: 2,
-          spaceBetween: 20,
-        },
-        300: {
-          slidesPerView: 1,
           spaceBetween: 20,
         },
       },

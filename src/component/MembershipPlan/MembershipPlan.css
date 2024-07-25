@@ -1,6 +1,7 @@
 @import "swiper/css";
 @import "swiper/css/pagination";
 @import "swiper/css/navigation";
+
 .MembershipPlan {
   background-color: var(--blue-block-background);
   padding: 90px 0px;
@@ -12,6 +13,7 @@
   justify-content: start;
   align-items: center;
   gap: 20px;
+  margin-bottom: 50px;
 }
 
 .MembershipPlan .head-content .heading-container h3 {
@@ -42,9 +44,6 @@
   font-weight: 700;
 }
 
-.MembershipPlan .swiper-wrapper {
-  justify-content: space-between;
-}
 .MembershipPlan .card-outer .card-inner {
   padding: 60px 30px;
 }
@@ -130,5 +129,24 @@
   width: 100%;
 }
 
+.swiper-button-prev:after,
+.swiper-button-next:after {
+  content: "" !important;
+}
+.swiper-button-next,
+.swiper-button-prev {
+  position: unset;
+}
+
 @media (max-width: 575.98px) {
+  .MembershipPlan .head-content .heading-container {
+    align-items: start;
+  }
+  .MembershipPlan .head-content .heading-container h3 {
+    font-size: 32px;
+    line-height: 32px;
+  }
+  .MembershipPlan .card-outer .card-inner {
+    padding: 30px 15px;
+  }
 }

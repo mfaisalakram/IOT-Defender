@@ -152,8 +152,10 @@ export const Faq = () => {
                 <Typography
                   sx={{
                     color: "white",
-                    fontSize: { xs: "16px", md: "20px" },
+                    fontSize: { xs: "16px", md: "18px" },
                     textAlign: "start",
+                    fontFamily: "Scandla-Bold",
+                    fontWeight: 700,
                   }}
                 >
                   {item.question}
@@ -163,8 +165,10 @@ export const Faq = () => {
                 <Typography
                   sx={{
                     color: "white",
-                    fontSize: { xs: "16px", md: "20px" },
+                    fontSize: { xs: "16px", md: "16px" },
                     textAlign: "start",
+                    fontFamily: "Inter Tight",
+                    fontWeight: 400,
                   }}
                 >
                   {item.answer}
@@ -186,12 +190,14 @@ export const Faq = () => {
             },
             color: "#ffffff",
             borderRadius: "100px",
-            fontSize: "18px",
+            fontSize: "16px",
             lineHeight: "21.78px",
             fontWeight: "700",
-            padding: "10px",
-            width: "167.1px",
-            height: "46px",
+            padding: "6px 24px",
+            // width: "167.1px",
+            // height: "46px",
+            fontFamily: "Inter Tight",
+            fontWeight: 700,
           }}
           onClick={handleExpandAll}
         >

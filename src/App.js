@@ -27,6 +27,7 @@ function App() {
   }, []);
   return (
     <div className="App">
+      <Header />
       <Routes>
         <Route
           path="/"
@@ -35,24 +36,23 @@ function App() {
               <SplashScreen />
             ) : (
               <>
-                <Header />
                 <Banner />
                 <Clients />
                 <Featured />
                 <HowItWork />
                 <OurFeatures />
-                {/* <MembershipPlan /> */}
+                <MembershipPlan />
                 <Faq />
                 <GetInTouch />
-                <Footer />
               </>
             )
           }
         />
 
         <Route path="/Privacy-policy" element={<PrivacyPolicy />} />
-        <Route path="/Terms-and-conditions." element={<TermAndConditions />} />
+        <Route path="/Terms-and-conditions" element={<TermAndConditions />} />
       </Routes>
+      <Footer />
     </div>
   );
 }

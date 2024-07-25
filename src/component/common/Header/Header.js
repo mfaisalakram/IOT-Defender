@@ -53,6 +53,7 @@ const Header = () => {
 
   return (
     <Box className="Header">
+      <div className="header-overlay"></div>
       <Box
         className="global-container n-auto"
         sx={{
@@ -60,7 +61,7 @@ const Header = () => {
           justifyContent: "space-around",
           alignItems: "center",
           width: "100% !important",
-          height: { xs: "100px", md: "154px" },
+          height: { xs: "100px", md: "100px" },
         }}
       >
         <Box
@@ -95,7 +96,7 @@ const Header = () => {
             >
               <Typography
                 sx={{
-                  fontSize: "18px",
+                  fontSize: "16px",
                   fontWeight: "700",
                   fontFamily: "Inter Tight",
                   lineHeight: "21.70px",
@@ -206,7 +207,7 @@ const Header = () => {
                 sx={{
                   textDecoration: "none", // remove underline
                   color: "white", // keep text color
-                  textAlign:"start"
+                  textAlign: "start",
                 }}
               >
                 <ListItem

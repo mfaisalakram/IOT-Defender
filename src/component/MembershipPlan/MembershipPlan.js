@@ -45,6 +45,9 @@ export const MembershipPlan = () => {
         {
           title: "10 Devices",
         },
+        {
+          title: "10 Sensors per device",
+        },
       ],
       buttonText: "Get Started",
     },
@@ -114,20 +117,19 @@ export const MembershipPlan = () => {
   ];
 
   useEffect(() => {
-    const swiper = new Swiper(".mySwiper", {
+    const swiper = new Swiper(".mySwiper2", {
       loop: true,
-      direction: "horizontal",
       breakpoints: {
         1200: {
-          slidesPerView: 6,
+          slidesPerView: 3,
           spaceBetween: 20,
         },
         800: {
-          slidesPerView: 4,
+          slidesPerView: 3,
           spaceBetween: 20,
         },
         600: {
-          slidesPerView: 3,
+          slidesPerView: 2,
           spaceBetween: 20,
         },
         440: {
@@ -156,7 +158,7 @@ export const MembershipPlan = () => {
           </div>
         </div>
 
-        <div className="swiper mySwiper">
+        <div className="swiper mySwiper2">
           <div className="swiper-wrapper">
             {MembershipData?.map((item, index) => (
               <div key={index} className="swiper-slide">
@@ -195,30 +197,35 @@ export const MembershipPlan = () => {
               </div>
             ))}
           </div>
-          <div class="swiper-button-next"></div>
-          <div class="swiper-button-prev"></div>
         </div>
         <Box
           sx={{
+            marginTop: "20px",
+            height: "fit-content",
+            width: "100%",
             display: "flex",
-            flexDirection: "row",
-            justifyContent: "end",
-            marginRight: "190px",
-            cursor: "pointer",
-            mt: 3,
+            justifyContent: { xs: "center", ld: "end" },
+            gap: "30px",
+            marginTop: "50px",
+            paddingRight: "10px",
           }}
         >
-          <img
-            style={{ height: "50px", width: "50px", marginRight: "20px" }}
-            className="arrow-left arrow"
-            src="/assets/backto1.png"
-            alt="back arrow"
-          />
-          <img
-            className="arrow-right arrow"
-            src="/assets/nextto1.png"
-            alt="back arrow"
-          />
+          <div class="swiper-button-prev">
+            <img
+              style={{ height: "45px", width: "45px", marginRight: "20px" }}
+              className="arrow-left arrow"
+              src="/assets/backto1.png"
+              alt="back arrow"
+            />
+          </div>
+          <div class="swiper-button-next">
+            <img
+              style={{ height: "45px", width: "45px", marginRight: "20px" }}
+              className="arrow-right arro"
+              src="/assets/nextto1.png"
+              alt="back arrow"
+            />
+          </div>
         </Box>
       </div>
     </div>

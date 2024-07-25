@@ -15,8 +15,8 @@
 }
 .Featured .feature-block .main-text {
   font-family: "Scandla-Bold";
-  font-size: 36px;
-  line-height: 43.2px;
+  font-size: 24px;
+  line-height: 32px;
   color: var(--while-primary);
 
   margin: 30px 0px;
@@ -40,8 +40,9 @@
     padding: 25px 0;
   }
   .Featured .feature-block .main-text {
-    font-size: 20px;
-    line-height: 24px;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: start;
   }
   .Featured .feature-block .main-heading {
     font-size: 16px;
@@ -61,9 +62,7 @@
   .Featured .global-block {
     background: none !important;
   }
-  .Featured .feature-block .main-text {
-    text-align: start;
-  }
+
   .Featured .feature-block {
     padding: 0 !important;
   }

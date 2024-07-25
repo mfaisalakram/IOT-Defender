@@ -1,11 +1,12 @@
 .Banner {
   position: relative;
-  background: url("../../assets/gif/banner-gif.gif");
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: right;
   height: 75vh;
   padding-top: 160px;
+  /* background: url("../../assets/gif/banner-gif.gif");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right; */
+  overflow: hidden;
 }
 
 .Banner .brand-content {
@@ -28,8 +29,8 @@
 .Banner .brand-content .banner-text {
   font-family: "Inter Tight";
   font-weight: 700;
-  font-size: 24px;
-  line-height: 29.04px;
+  font-size: 21px;
+  line-height: 26.04px;
 }
 
 .Banner .brand-content .button-block {
@@ -42,44 +43,64 @@
 .Banner .brand-content .button-block .book-demo-button {
   font-family: "Inter Tight";
   font-weight: 700;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 21.78px;
   color: var(--black-primary);
   border-radius: 100px;
-  padding: 8px 24px;
+  padding: 6px 24px;
 }
 .Banner .brand-content .button-block .learn-more-button {
   font-family: "Inter Tight";
   font-weight: 700;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 21.78px;
   color: var(--white-primary);
   border-radius: 100px;
-  padding: 8px 24px;
+  padding: 6px 24px;
 }
 
 .Banner .gif-container {
   position: absolute;
   top: -150px;
   right: -10px;
-  z-index: -1;
-  box-shadow: inset 0px 10px 10px -10px rgba(0, 0, 0, 0.5);
-  height: fit-content;
-  height: 100%;
-  display: none;
+  z-index: -2;
+  height: calc(75vh + 160px);
+  /* overflow: hidden; */
 }
 
 .Banner .gif-container img {
-  width: 100%;
+  width: 80%;
+  height: 100%;
+  float: right;
   object-fit: cover;
+  box-shadow: -20px 0 30px #0b132d;
+  mix-blend-mode: multiply;
 }
 
-/* Media Queries */
+@media (max-width: 1024px) {
+  .Banner .brand-content {
+    margin: auto;
+  }
+}
 
 @media (max-width: 575.98px) {
+  .Banner {
+    height: fit-content !important;
+  }
+  .Banner .brand-content {
+    width: 100%;
+  }
   .Banner .gif-container {
     position: unset;
     display: block;
+    height: fit-content !important;
+    z-index: 1;
+  }
+  .Banner .gif-container img {
+    width: 100%;
+    float: none;
+    object-fit: cover;
+    box-shadow: 20px -20px 30px #0b132d;
   }
   .Banner .brand-content .banner-heading {
     font-size: 38px;
@@ -100,7 +121,7 @@
   }
 
   .Banner {
-    background: none;
+    /* background: none; */
     padding-top: 120px;
   }
 }

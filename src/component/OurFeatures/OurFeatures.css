@@ -35,8 +35,8 @@
   color: #fff;
   font-family: "Inter Tight";
   font-weight: 400px;
-  font-size: 24px;
-  line-height: 28.8px;
+  font-size: 21px;
+  line-height: 25px;
   text-align: center;
   width: 80%;
   margin: auto;
@@ -83,27 +83,23 @@
   text-align: end;
   margin: 30px 0px;
 }
+
 .OurFeatures .card_inner .title {
-  font-size: 24px;
-  line-height: 29.04px;
+  font-size: 21px;
+  line-height: 25px;
   color: var(--white-primary);
   font-family: "Inter Tight";
   font-weight: 500;
+  color: #fff !important;
 }
-.OurFeatures .card_inner .title {
-  font-size: 24px;
-  line-height: 29.04px;
+
+.OurFeatures .card_inner .description {
+  font-size: 16px;
+  line-height: 20px;
   color: var(--white-primary);
   font-family: "Inter Tight";
   font-weight: 400;
   color: #fff !important;
-}
-
-@media (max-width: 1400px) {
-  .OurFeatures {
-    /* background-size: 120% 120%; */
-    background-position: center 0%;
-  }
 }
 
 @media (max-width: 991.98px) {
@@ -150,10 +146,5 @@
     border-radius: 0px;
     padding-left: 0px;
     padding-right: 0px;
-  }
-
-  .OurFeatures {
-    /* background-size: 140% 25%; */
-    /* background-position: center 9%; */
   }
 }

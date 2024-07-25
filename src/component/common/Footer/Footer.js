@@ -18,9 +18,10 @@ export const Footer = () => {
             <img src="/assets/logo.png" alt="" width="200px" />
             <Typography
               sx={{
-                lineHeight: "24px",
-                fontSize: "20px",
+                fontSize: { xs: "14px", lg: "16px" },
+                lineHeight: { xs: "20px", lg: "24px" },
                 fontWeight: "400",
+                fontFamily: "Inter Tight",
                 mt: 6,
               }}
             >
@@ -29,8 +30,10 @@ export const Footer = () => {
             </Typography>
             <Typography
               sx={{
-                lineHeight: "16px",
+                fontSize: { xs: "14px", lg: "16px" },
+                lineHeight: { xs: "10px", lg: "24px" },
                 fontWeight: "400",
+                fontFamily: "Inter Tight",
                 mt: 8,
                 textDecoration: "underline",
               }}
@@ -53,10 +56,11 @@ export const Footer = () => {
           <Box className="quick-links">
             <Typography
               sx={{
-                lineHeight: "21.6px",
-                fontWeight: "600",
+                fontSize: { xs: "14px", lg: "16px" },
+                lineHeight: { xs: "10px", lg: "24px" },
+                fontWeight: "500",
+                fontFamily: "Scandla-Bold",
                 marginBottom: 3,
-                fontSize: "18px",
               }}
             >
               Quick Links
@@ -81,9 +85,10 @@ export const Footer = () => {
                 <Typography
                   key={index}
                   sx={{
-                    lineHeight: "21.6px",
+                    fontSize: { xs: "14px", lg: "16px" },
+                    lineHeight: { xs: "10px", lg: "24px" },
                     fontWeight: "400",
-                    fontSize: "18px",
+                    fontFamily: "Inter Tight",
                     mb: 3,
                   }}
                 >
@@ -100,26 +105,34 @@ export const Footer = () => {
           >
             <Typography
               sx={{
-                fontSize: "18px",
-                lineHeight: "21px",
-                fontWeight: "600",
-                mb: 3,
+                fontSize: { xs: "14px", lg: "16px" },
+                lineHeight: { xs: "10px", lg: "24px" },
+                fontWeight: "500",
+                fontFamily: "Scandla-Bold",
+                marginBottom: 3,
               }}
             >
               Follow Us
             </Typography>
-            <Box  component="a"
-                href="https://x.com/wolfberryllc"
-                target="_blank"
-                rel="noopener noreferrer"
-              sx={{ display: "flex", alignItems: "center", marginBottom: 4,textDecoration: "none", }}
+            <Box
+              component="a"
+              href="https://x.com/wolfberryllc"
+              target="_blank"
+              rel="noopener noreferrer"
+              sx={{
+                display: "flex",
+                alignItems: "center",
+                marginBottom: 4,
+                textDecoration: "none",
+              }}
             >
               <img src="/assets/footer-logo.png" alt="" />
               <Typography
                 sx={{
-                  lineHeight: "21.6px",
-                  fontWeight: "500",
-                  fontSize: "18px",
+                  fontSize: { xs: "14px", lg: "16px" },
+                  lineHeight: { xs: "10px", lg: "24px" },
+                  fontWeight: "400",
+                  fontFamily: "Inter Tight",
                   marginLeft: 1,
                   textDecoration: "underline",
                   color: "white",
@@ -128,18 +141,20 @@ export const Footer = () => {
                 iotdefender
               </Typography>
             </Box>
-            <Box component="a"
-                href="https://www.linkedin.com/company/wolfberryllc/"
-                target="_blank"
-                rel="noopener noreferrer"
+            <Box
+              component="a"
+              href="https://www.linkedin.com/company/wolfberryllc/"
+              target="_blank"
+              rel="noopener noreferrer"
               sx={{ display: "flex", alignItems: "center", marginBottom: 4 }}
             >
               <img src="/assets/footer-logo.png" alt="" />
               <Typography
                 sx={{
-                  lineHeight: "21.6px",
-                  fontWeight: "500",
-                  fontSize: "18px",
+                  fontSize: { xs: "14px", lg: "16px" },
+                  lineHeight: { xs: "10px", lg: "24px" },
+                  fontWeight: "400",
+                  fontFamily: "Inter Tight",
                   marginLeft: 1,
                   textDecoration: "underline",
                   color: "white",
@@ -158,6 +173,10 @@ export const Footer = () => {
             alignItems: "center",
             width: "100%",
             cursor: "pointer",
+            fontSize: { xs: "14px", lg: "16px" },
+            lineHeight: { xs: "10px", lg: "24px" },
+            fontWeight: "400",
+            fontFamily: "Inter Tight",
           }}
         >
           <Typography
@@ -167,9 +186,10 @@ export const Footer = () => {
           </Typography>
           <Typography
             sx={{
-              fontSize: "16px",
+              fontSize: { xs: "14px", lg: "16px" },
+              lineHeight: { xs: "10px", lg: "24px" },
               fontWeight: "400",
-              lineHeight: "19.2px",
+              fontFamily: "Inter Tight",
               mt: { md: 0, xs: 4 },
             }}
           >
