@@ -8,12 +8,15 @@
   text-align: left;
 }
 
+.MembershipPlan .customContainer {
+  padding: 0px 20px;
+}
+
 .MembershipPlan .head-content .heading-container {
   display: flex;
   justify-content: start;
   align-items: center;
   gap: 20px;
-  margin-bottom: 50px;
 }
 
 .MembershipPlan .head-content .heading-container h3 {
@@ -34,51 +37,65 @@
 .MembershipPlan .head-content p {
   color: #fff;
   font-family: "Inter Tight";
-  font-weight: 400px;
-  font-size: 24px;
-  line-height: 28.8px;
-  text-align: center;
-  width: 80%;
-  margin: auto;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
   margin-bottom: 40px;
-  font-weight: 700;
 }
 
 .MembershipPlan .card-outer .card-inner {
-  padding: 60px 30px;
+  padding: 10px 10px;
 }
-/* .MembershipPlan .card-outer .card-inner:nth-child(3) {
-  background-color: var(--green-primary);
-} */
+
 .MembershipPlan .card-outer .card-inner .card-brand {
   display: flex;
   justify-content: start;
   flex-direction: column;
   align-items: start;
-  gap: 20px;
+  gap: 5px;
   border-bottom: 1px solid #fff !important;
   margin-bottom: 40px;
 }
+
+.MembershipPlan .card-outer .card-inner .mainHead {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
 .MembershipPlan .card-outer .card-inner .title {
-  font-size: 32px;
-  line-height: 38.4px;
+  font-size: 28px;
+  line-height: 35.4px;
   font-family: "Scandla-Bold";
   font-weight: 700;
 }
+
+.MembershipPlan .card-outer .card-inner .type {
+  padding: 3px 10px;
+  border-radius: 25px;
+  font-size: 12px;
+  line-height: 20px;
+  color: var(--black-primary);
+  background-color: #fff;
+  font-family: "Scandla-Bold";
+  font-weight: 700;
+  text-align: center;
+}
+
 .MembershipPlan .card-outer .card-inner .description {
-  font-size: 18px;
-  line-height: 23.4px;
+  font-size: 13px;
+  line-height: 15px;
   font-family: "Inter Tight";
-  font-weight: 400;
+  font-weight: 500;
 }
 
 .MembershipPlan .card-outer .card-inner .price-container {
   position: relative;
-  padding-left: 25px;
+  padding-left: 20px;
 }
 .MembershipPlan .card-outer .card-inner .price-container .currency {
-  font-size: 36px;
-  line-height: 43.2px;
+  font-size: 28px;
+  line-height: 40.2px;
   font-family: "Scandla-Bold";
   font-weight: 700;
   position: absolute;
@@ -87,15 +104,15 @@
 }
 
 .MembershipPlan .card-outer .card-inner .price-container .price {
-  font-size: 96px;
+  font-size: 60px;
   line-height: 115.2px;
   font-family: "Scandla-Bold";
   font-weight: 700;
 }
 
 .MembershipPlan .card-outer .card-inner .price-container .period {
-  font-size: 24px;
-  line-height: 29px;
+  font-size: 18px;
+  line-height: 24px;
   font-family: "Inter Tight";
   font-weight: 500;
 }
@@ -104,12 +121,13 @@
   display: flex;
   justify-content: start;
   align-items: center;
-  gap: 20px;
+  gap: 10px;
+  margin-top: 6px;
 }
 
 .MembershipPlan .card-outer .card-inner .card-bottom .single-item .title {
-  font-size: 24px;
-  line-height: 31.2px;
+  font-size: 16px;
+  line-height: 20px;
   font-family: "Inter Tight";
   font-weight: 400;
 }
@@ -121,7 +139,7 @@
 .MembershipPlan .card-outer .card-inner .get-started-button {
   font-family: "Inter Tight";
   font-weight: 700;
-  font-size: 18px;
+  font-size: 15px;
   line-height: 21.78px;
   color: var(--black-primary);
   border-radius: 100px;
@@ -138,15 +156,78 @@
   position: unset;
 }
 
+.MembershipPlan .popular .get-started-button {
+  background-color: #fff !important;
+}
+
+.MembershipPlan .popular .global-block-wrapper_top {
+  background-color: none;
+}
+
+.MembershipPlan .popular .global-block_top {
+  background-color: var(--green-primary);
+  color: #000 !important;
+}
+
+.MembershipPlan .popular .card-outer .card-inner .card-brand {
+  border-bottom: 1px solid #000 !important;
+}
+
 @media (max-width: 575.98px) {
   .MembershipPlan .head-content .heading-container {
     align-items: start;
+  }
+  .MembershipPlan .card-outer .card-inner .title {
+    font-size: 24px;
+    line-height: 35.4px;
+  }
+  .MembershipPlan .card-outer .card-inner .card-bottom .single-item .title {
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .MembershipPlan .card-outer .card-inner .get-started-button {
+    font-size: 12px;
+    padding: 5px 24px;
   }
   .MembershipPlan .head-content .heading-container h3 {
     font-size: 32px;
     line-height: 32px;
   }
   .MembershipPlan .card-outer .card-inner {
-    padding: 30px 15px;
+    padding: 10px 20px;
+  }
+  .MembershipPlan .head-content p {
+    font-size: 16px;
+    line-height: 19.36px;
+  }
+}
+
+@media (min-width: 1800px) {
+  .MembershipPlan .customContainer {
+    padding-left: 20%;
+  }
+}
+
+@media (min-width: 1650px) and (max-width: 1800px) {
+  .MembershipPlan .customContainer {
+    padding-left: 18%;
+  }
+}
+
+@media (min-width: 1500px) and (max-width: 1650px) {
+  .MembershipPlan .customContainer {
+    padding-left: 16%;
+  }
+}
+
+@media (min-width: 1350px) and (max-width: 1500px) {
+  .MembershipPlan .customContainer {
+    padding-left: 12%;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1350px) {
+  .MembershipPlan .customContainer {
+    padding-left: 8%;
   }
 }

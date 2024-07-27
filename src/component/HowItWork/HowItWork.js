@@ -47,12 +47,13 @@ export const HowItWork = () => {
             <h3 className="heading">How it works </h3>
           </div>
           <p>
-            IoT Defender provides easily onboarding process. Select your desired
-            subscription plan after which set up your device(s), you will also
-            receive an API Security token key, set up your device(s), and mint
-            data onto the IoT Defender network blockchain via API calls. You can
-            easily retrieve this data with further API calls, ensuring secure,
-            immutable, and accessible IoT data management.
+            IoT Defender offers a streamlined onboarding process that makes it
+            simple to get started. First, choose your preferred subscription
+            plan. Next, set up your devices and you'll receive an API Security
+            token key. This key allows you to securely mint data onto the IoT
+            Defender network blockchain through API calls. Retrieving this data
+            is just as straightforward, ensuring that your IoT data management
+            is secure, immutable, and easily accessible.
           </p>
         </div>
 

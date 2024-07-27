@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { DotIcon } from "../../assets/svgs/dot_icon";
 import TickGreenIcon from "../../assets/svgs/tick_green_icon";
-
+import TickBlackIconMemberShip from "../../assets/svgs/tick_black_icon_membership";
 import Swiper from "https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs";
 
 import { Box } from "@mui/material";
@@ -13,7 +13,7 @@ export const MembershipPlan = () => {
       id: 1,
       title: "Free",
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      type: "Popular",
+      type: "Non Popular",
       currency: "$",
       price: 0,
       period: "month",
@@ -34,7 +34,7 @@ export const MembershipPlan = () => {
       id: 2,
       title: "Silver",
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      type: "Popular",
+      type: "Non Popular",
       currency: "$",
       price: 0,
       period: "month",
@@ -76,7 +76,7 @@ export const MembershipPlan = () => {
       id: 4,
       title: "Platinum",
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      type: "Popular",
+      type: "Non Popular",
       currency: "$",
       price: 0,
       period: "month",
@@ -97,7 +97,7 @@ export const MembershipPlan = () => {
       id: 5,
       title: "Enterprise",
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      type: "Popular",
+      type: "Non Popular",
       currency: "$",
       price: 0,
       period: "month",
@@ -118,10 +118,14 @@ export const MembershipPlan = () => {
 
   useEffect(() => {
     const swiper = new Swiper(".mySwiper2", {
-      loop: true,
+      // loop: true,
       breakpoints: {
+        1800: {
+          slidesPerView: 4.5,
+          spaceBetween: 20,
+        },
         1200: {
-          slidesPerView: 3,
+          slidesPerView: 3.5,
           spaceBetween: 20,
         },
         800: {
@@ -150,24 +154,42 @@ export const MembershipPlan = () => {
 
   return (
     <div className="MembershipPlan" id="Membership">
-      <div className="global-container">
+      <div className="customContainer">
         <div className="head-content">
           <div className="heading-container">
             <DotIcon />
             <h3 className="heading">Membership Plans</h3>
           </div>
+          <p>
+            Unlock seamless IoT data integration with our blockchain-secured
+            model. Experience unmatched reliability, security, and efficiency.
+            Choose the perfect plan to power your connected future with
+            confidence and control.
+          </p>
         </div>
 
         <div className="swiper mySwiper2">
           <div className="swiper-wrapper">
             {MembershipData?.map((item, index) => (
-              <div key={index} className="swiper-slide">
+              <div
+                key={index}
+                className={`swiper-slide ${
+                  item?.type === "Popular" ? "popular" : ""
+                }`}
+              >
                 <div className="global-block-wrapper_top">
                   <div className="global-block_top">
                     <div className="card-outer">
                       <div className="card-inner">
                         <div className="card-brand">
-                          <div className="title">{item?.title}</div>
+                          <div className="mainHead">
+                            <div className="title">{item?.title}</div>
+                            {item?.type === "Popular" ? (
+                              <div className="type">{item?.type}</div>
+                            ) : (
+                              <></>
+                            )}
+                          </div>
                           <div className="description">{item?.description}</div>
                           <div className="price-container">
                             <span className="currency">{item?.currency}</span>
@@ -177,10 +199,19 @@ export const MembershipPlan = () => {
                         </div>
                         <div className="card-bottom">
                           <div className="item-list-container">
-                            {item?.items?.map((item, index) => (
+                            {item?.items?.map((el, index) => (
                               <div className="single-item" key={index}>
-                                <TickGreenIcon />
-                                <div className="title">{item?.title}</div>
+                                {item?.type === "Popular" ? (
+                                  <div>
+                                    <TickBlackIconMemberShip />
+                                  </div>
+                                ) : (
+                                  <div>
+                                    <TickGreenIcon />
+                                  </div>
+                                )}
+
+                                <div className="title">{el?.title}</div>
                               </div>
                             ))}
                           </div>
@@ -198,13 +229,15 @@ export const MembershipPlan = () => {
             ))}
           </div>
         </div>
+      </div>
+      <div className="global-container">
         <Box
           sx={{
             marginTop: "20px",
             height: "fit-content",
             width: "100%",
             display: "flex",
-            justifyContent: { xs: "center", ld: "end" },
+            justifyContent: { xs: "center", lg: "end" },
             gap: "30px",
             marginTop: "50px",
             paddingRight: "10px",

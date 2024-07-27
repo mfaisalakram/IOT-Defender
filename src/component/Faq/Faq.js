@@ -36,7 +36,7 @@ export const Faq = () => {
     {
       question: "Is IoT Defender difficult to set up?",
       answer:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.",
+        "No, IoT Defender is user-friendly and comes with straightforward installation guides. It offers quick setup options to get your IoT devices protected with minimal hassle.",
     },
     {
       question: "Does IoT Defender provide real-time monitoring?",
