@@ -124,6 +124,7 @@ export const Footer = () => {
                 alignItems: "center",
                 marginBottom: 4,
                 textDecoration: "none",
+                gap: "5px",
               }}
             >
               <img src="/assets/footer-logo.png" alt="" />
@@ -146,7 +147,12 @@ export const Footer = () => {
               href="https://www.linkedin.com/company/wolfberryllc/"
               target="_blank"
               rel="noopener noreferrer"
-              sx={{ display: "flex", alignItems: "center", marginBottom: 4 }}
+              sx={{
+                display: "flex",
+                alignItems: "center",
+                marginBottom: 4,
+                gap: "5px",
+              }}
             >
               <img src="/assets/footer-logo.png" alt="" />
               <Typography
@@ -180,16 +186,23 @@ export const Footer = () => {
           }}
         >
           <Typography
-            sx={{ fontSize: "16px", fontWeight: "400", lineHeight: "19.2px" }}
+            sx={{
+              fontSize: { xs: "14px", lg: "15px" },
+              lineHeight: { xs: "10px", lg: "24px" },
+              fontWeight: "400",
+              lineHeight: "19.2px",
+              fontWeight: "400",
+              fontFamily: "Inter Tight",
+            }}
           >
             © 2024 IoT Defender
           </Typography>
           <Typography
             sx={{
-              fontSize: { xs: "14px", lg: "16px" },
+              fontSize: { xs: "14px", lg: "15px" },
               lineHeight: { xs: "10px", lg: "24px" },
               fontWeight: "400",
-              fontFamily: "Inter Tight",
+              fontFamily: "Scandla-Bold",
               mt: { md: 0, xs: 4 },
             }}
           >

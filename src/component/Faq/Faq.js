@@ -197,11 +197,14 @@ export const Faq = () => {
             // width: "167.1px",
             // height: "46px",
             fontFamily: "Inter Tight",
-            fontWeight: 700,
+            fontWeight: 400,
+            fontSize: { xs: "15px", md: "15px" },
+            padding: "8px 24px",
+            textTransform: "none",
           }}
           onClick={handleExpandAll}
         >
-          {allExpanded ? "View All" : "View All"}
+          {allExpanded ? "Close all" : "View all"}
         </Button>
       </Box>
     </Box>

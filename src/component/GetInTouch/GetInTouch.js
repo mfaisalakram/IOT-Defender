@@ -275,7 +275,7 @@ export const GetInTouch = () => {
                     <Button
                       type="submit"
                       sx={{
-                        fontSize: { xs: "16px", md: "18px" },
+                        fontSize: { xs: "15px", md: "15px" },
                         fontWeight: "700",
                         lineHeight: "21.78px",
                         fontFamily: "Inter Tight",
@@ -289,8 +289,8 @@ export const GetInTouch = () => {
                         "&:focus": {
                           outline: "none",
                         },
-                        width: { xs: "168px", md: "187px" },
-                        height: { xs: "40px", md: "46px" },
+                        padding: "8px 24px",
+                        textTransform: "none",
                       }}
                       variant="contained"
                     >
