@@ -25,14 +25,15 @@
 }
 
 .Header .header-overlay {
-  /* background-color: #0a162f;
+  background-color: #0a162f;
   height: 100%;
   width: 100%;
-  z-index: 1;
+  z-index: -1;
   position: absolute;
   top: 0;
   left: 0;
-  opacity: 0.1; 
-  box-shadow: 0 4px 8px rgba(10, 22, 47, 0.5);
-  */
+  opacity: 0.5;
+  /* box-shadow: 0 4px 8px rgba(10, 22, 47, 0.5); */
+  /* box-shadow: 0 0 10px 5px;
+  box-shadow: 0 0 10px 5px rgba(10, 22, 47, 1); */
 }
