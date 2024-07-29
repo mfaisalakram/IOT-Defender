@@ -1,5 +1,6 @@
 import { Box, Divider, Grid, Typography } from "@mui/material";
 import React from "react";
+import LinkedInSvg from "../../../assets/svgs/linkedIn";
 
 export const Footer = () => {
   return (
@@ -28,18 +29,25 @@ export const Footer = () => {
               Empower your IoT solutions with decentralized blockchain security.
               Transparent, Immutable, and Scalable.
             </Typography>
-            <Typography
-              sx={{
-                fontSize: { xs: "14px", lg: "16px" },
-                lineHeight: { xs: "10px", lg: "24px" },
-                fontWeight: "400",
-                fontFamily: "Inter Tight",
-                mt: 8,
-                textDecoration: "underline",
-              }}
+
+            <a
+              href="mailto:support@wolfberryllc.com"
+              style={{ textDecoration: "none" }}
             >
-              support@wolfberryllc.com
-            </Typography>
+              <Typography
+                sx={{
+                  fontSize: { xs: "14px", lg: "16px" },
+                  lineHeight: { xs: "10px", lg: "24px" },
+                  fontWeight: "400",
+                  fontFamily: "Inter Tight",
+                  mt: 8,
+                  textDecoration: "underline",
+                  color: "#fff !important",
+                }}
+              >
+                support@wolfberryllc.com
+              </Typography>
+            </a>
           </Box>
         </Grid>
         <Grid
@@ -139,7 +147,7 @@ export const Footer = () => {
                   color: "white",
                 }}
               >
-                iotdefender
+                wolfberryllc
               </Typography>
             </Box>
             <Box
@@ -154,7 +162,9 @@ export const Footer = () => {
                 gap: "5px",
               }}
             >
-              <img src="/assets/footer-logo.png" alt="" />
+              {/* <img src="/assets/footer-logo.png" alt="" /> */}
+
+              <LinkedInSvg />
               <Typography
                 sx={{
                   fontSize: { xs: "14px", lg: "16px" },
@@ -166,7 +176,7 @@ export const Footer = () => {
                   color: "white",
                 }}
               >
-                iotdefender
+                wolfberryllc
               </Typography>
             </Box>
           </Box>

@@ -91,18 +91,24 @@ export const GetInTouch = () => {
                 }}
               >
                 <Wolfberryllc />
-                <Typography
-                  className="main-heading"
-                  sx={{
-                    fontSize: "16px",
-                    marginLeft: 1,
-                    fontWeight: "400",
-                    lineHeight: "19.2px",
-                    textDecoration: "underline",
-                  }}
+                <a
+                  href="mailto:support@wolfberryllc.com"
+                  style={{ textDecoration: "none" }}
                 >
-                  support@wolfberryllc.com
-                </Typography>
+                  <Typography
+                    className="main-heading"
+                    sx={{
+                      fontSize: "16px",
+                      marginLeft: 1,
+                      fontWeight: "400",
+                      lineHeight: "19.2px",
+                      textDecoration: "underline",
+                      color: "#fff !important",
+                    }}
+                  >
+                    support@wolfberryllc.com
+                  </Typography>
+                </a>
               </Box>
               <Box
                 component="a"
@@ -128,7 +134,7 @@ export const GetInTouch = () => {
                     color: "white",
                   }}
                 >
-                  iotdefender
+                  wolfberryllc
                 </Typography>
               </Box>
               <Box
@@ -154,7 +160,7 @@ export const GetInTouch = () => {
                     color: "white",
                   }}
                 >
-                  iotdefender
+                  wolfberryllc
                 </Typography>
               </Box>
             </Box>
@@ -353,7 +359,7 @@ export const GetInTouch = () => {
                     color: "white",
                   }}
                 >
-                  iotdefender
+                  wolfberryllc
                 </Typography>
               </Box>
               <Box
@@ -379,7 +385,7 @@ export const GetInTouch = () => {
                     color: "white",
                   }}
                 >
-                  iotdefender
+                  wolfberryllc
                 </Typography>
               </Box>
             </Box>

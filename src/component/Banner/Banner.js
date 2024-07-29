@@ -17,9 +17,9 @@ export const Banner = () => {
               <p className="banner-text">
                 <span className="highlight-text">Empower your</span> IoT
                 solutions
-                <span className="highlight-text">with decentralized</span>{" "}
+                <span className="highlight-text"> with decentralized</span>{" "}
                 blockchain security. Transparent,{" "}
-                <span className="highlight-text">Immutable, and</span>Scalable.
+                <span className="highlight-text">Immutable, and</span> Scalable.
               </p>
               <div className="button-block">
                 <button className="book-demo-button button_primary">
