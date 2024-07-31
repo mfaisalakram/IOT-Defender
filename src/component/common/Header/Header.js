@@ -40,7 +40,7 @@ const Header = () => {
     { text: "Features", linkTo: "#Features" },
     { text: "Membership", linkTo: "#Membership" },
     { text: "FAQ", linkTo: "#FAQ" },
-    { text: "Book a demo", linkTo: "#Book-a-demo" },
+    { text: "Book a demo", linkTo: "#GetInTouch" },
   ];
 
   const menuItemsMobile = [
@@ -86,13 +86,10 @@ const Header = () => {
           }}
         >
           {menuItems.slice(0, -1).map((item, index) => (
-            <Link
+            <a
               key={index}
               href={item.linkTo}
-              sx={{
-                textDecoration: "none", // remove underline
-                color: "white", // keep text color
-              }}
+              style={{ textDecoration: "none", color: "#fff" }}
             >
               <Typography
                 sx={{
@@ -100,11 +97,12 @@ const Header = () => {
                   fontWeight: "700",
                   fontFamily: "Inter Tight",
                   lineHeight: "21.70px",
+                  color: "#fff", // keep text color
                 }}
               >
                 {item.text}
               </Typography>
-            </Link>
+            </a>
           ))}
 
           <Button
@@ -121,6 +119,7 @@ const Header = () => {
             // }}
             variant="contained"
             className="button_primary book-demo-button"
+            href={menuItems[menuItems.length - 1].linkTo}
           >
             {menuItems[menuItems.length - 1].text}
           </Button>

@@ -77,9 +77,9 @@ export const HowItWork = () => {
           })}
         </div>
         <div className="button-container">
-          <button className="button_primary book-demo-button">
+          <a className="button_primary book-demo-button" href={"#GetInTouch"}>
             Book a Demo
-          </button>
+          </a>
         </div>
       </div>
     </div>

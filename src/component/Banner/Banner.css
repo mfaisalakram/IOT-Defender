@@ -49,6 +49,7 @@
   color: var(--black-primary);
   border-radius: 100px;
   padding: 6px 24px;
+  text-decoration: none;
 }
 .Banner .brand-content .button-block .learn-more-button {
   font-family: "Inter Tight";
@@ -58,6 +59,7 @@
   color: var(--white-primary);
   border-radius: 100px;
   padding: 6px 24px;
+  text-decoration: none;
 }
 
 .Banner .gif-container {

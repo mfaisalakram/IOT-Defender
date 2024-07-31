@@ -5,7 +5,7 @@ const TermsConditions = () => {
   return (
     <div
       className="global-container"
-      style={{ textAlign: "start", padding: 20 }}
+      style={{ textAlign: "start", padding: 20, paddingBottom: "100px" }}
     >
       <Typography
         sx={{

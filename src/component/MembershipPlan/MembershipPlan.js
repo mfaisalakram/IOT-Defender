@@ -12,7 +12,8 @@ export const MembershipPlan = () => {
     {
       id: 1,
       title: "Free",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      description:
+        "Get started for free with up to 5000 API calls! Suitable for Students & Enthusiasts.",
       type: "Non Popular",
       currency: "$",
       price: 0,
@@ -22,10 +23,10 @@ export const MembershipPlan = () => {
           title: "5000 API Calls",
         },
         {
-          title: "10 Sensors per device",
+          title: "1 Device",
         },
         {
-          title: "1 Device",
+          title: "10 Sensors",
         },
       ],
       buttonText: "Get Started",
@@ -33,7 +34,8 @@ export const MembershipPlan = () => {
     {
       id: 2,
       title: "Silver",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      description:
+        "Add up to 10 devices at 10 sensors each with 25,000 API calls. Suitable for Small Corporations.",
       type: "Non Popular",
       currency: "$",
       price: 0,
@@ -46,7 +48,7 @@ export const MembershipPlan = () => {
           title: "10 Devices",
         },
         {
-          title: "10 Sensors per device",
+          title: "100 Sensors",
         },
       ],
       buttonText: "Get Started",
@@ -54,7 +56,8 @@ export const MembershipPlan = () => {
     {
       id: 3,
       title: "Gold",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      description:
+        "Add up to 25 devices at 10 sensors each with 50,000 API calls. Suitable for Medium-sized Corporations.",
       type: "Popular",
       currency: "$",
       price: 0,
@@ -67,7 +70,7 @@ export const MembershipPlan = () => {
           title: "25 Devices",
         },
         {
-          title: "10 Sensors per device",
+          title: "250 Sensors",
         },
       ],
       buttonText: "Get Started",
@@ -75,7 +78,8 @@ export const MembershipPlan = () => {
     {
       id: 4,
       title: "Platinum",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      description:
+        "Add up to 50 devices at 10 sensors each with 100,000 API calls. Suitable for Large Industries.",
       type: "Non Popular",
       currency: "$",
       price: 0,
@@ -88,7 +92,7 @@ export const MembershipPlan = () => {
           title: "50 Devices",
         },
         {
-          title: "10 Sensors per device",
+          title: "500 Sensors",
         },
       ],
       buttonText: "Get Started",
@@ -96,7 +100,8 @@ export const MembershipPlan = () => {
     {
       id: 5,
       title: "Enterprise",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      description:
+        "Add up to 100+ Devices at 10 sensors each with 1,000,000+ API calls. Suitable for Large Industries.",
       type: "Non Popular",
       currency: "$",
       price: 0,
@@ -106,10 +111,10 @@ export const MembershipPlan = () => {
           title: "1,000,000+ API Calls",
         },
         {
-          title: "10 Sensors per device",
+          title: "100+ Devices",
         },
         {
-          title: "100 Devices",
+          title: "1000+ Sensors",
         },
       ],
       buttonText: "Get Started",

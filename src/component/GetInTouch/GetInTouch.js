@@ -27,7 +27,7 @@ export const GetInTouch = () => {
     console.log(formValues);
   };
   return (
-    <Box sx={{ background: "#0c0919" }}>
+    <Box sx={{ background: "#0c0919" }} id={"GetInTouch"}>
       <Box className="global-container" sx={{ paddingBlock: "80px" }}>
         <Grid container spacing={4} justifyContent="start" textAlign={"start"}>
           <Grid item xs={12} md={4}>
@@ -60,10 +60,10 @@ export const GetInTouch = () => {
             </Box>
             <Typography
               sx={{
-                fontSize: "20px",
-                fontWeight: "400",
-                lineHeight: "24px",
+                fontSize: "16px",
                 mb: 4,
+                fontWeight: "400",
+                lineHeight: "20px",
                 fontFamily: "Inter Tight",
               }}
             >

@@ -22,9 +22,12 @@ export const Banner = () => {
                 <span className="highlight-text">Immutable, and</span> Scalable.
               </p>
               <div className="button-block">
-                <button className="book-demo-button button_primary">
+                <a
+                  className="book-demo-button button_primary"
+                  href="#GetInTouch"
+                >
                   Book a demo
-                </button>
+                </a>
                 <button className="learn-more-button button_secondary">
                   Learn More
                 </button>
