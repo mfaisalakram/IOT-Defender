@@ -1,14 +1,13 @@
-import { Box, Divider, Grid, Typography } from "@mui/material";
 import React from "react";
+
 import LinkedInSvg from "../../../assets/svgs/linkedIn";
+import { Box, Divider, Grid, Typography } from "@mui/material";
 
 export const Footer = () => {
   return (
     <Box
       sx={{
-        // boxShadow: "0 -2px 18px 1px rgba(0,0,0,0.1)",
-        // width: "100%",
-        borderTop: ".5px solid #e8e8e8",
+        borderTop: "1px solid #e8e8e8",
       }}
     >
       <Box
@@ -227,11 +226,19 @@ export const Footer = () => {
                 mt: { md: 0, xs: 4 },
               }}
             >
-              <a href="/Privacy-policy" style={{ color: "#fff" }}>
+              <a
+                href="/Privacy-policy"
+                target="__blank"
+                style={{ color: "#fff" }}
+              >
                 Privacy Policy
               </a>{" "}
               -{" "}
-              <a href="/Terms-and-conditions" style={{ color: "#fff" }}>
+              <a
+                href="/Terms-and-conditions"
+                target="__blank"
+                style={{ color: "#fff" }}
+              >
                 Terms & Conditions
               </a>
             </Typography>
