@@ -405,16 +405,8 @@ const PrivacyPolicy = () => {
           sx={{ fontSize: "15px", fontWeight: 400, fontFamily: "Inter Tight" }}
         >
           <strong>Email: </strong>
-          <a
-            href="mailto:support@iotdefender.io"
-            style={{
-              fontSize: { xs: "14px", lg: "16px" },
-              lineHeight: { xs: "20px", lg: "24px" },
-              fontWeight: 400,
-              fontFamily: "Inter Tight",
-            }}
-          >
-            support@iotdefender.io
+          <a href="mailto:support@wolfberryllc.com" className="anchers green">
+            support@wolfberryllc.com
           </a>
         </Typography>
 
@@ -435,7 +427,17 @@ const PrivacyPolicy = () => {
               fontFamily: "Inter Tight",
             }}
           >
-            FAQ | Privacy Policy | Terms and Conditions
+            <a href="/#FAQ" className="anchers">
+              FAQ
+            </a>{" "}
+            |{" "}
+            <a href="/Privacy-policy" className="anchers">
+              Privacy Policy
+            </a>{" "}
+            |{" "}
+            <a href="/Terms-and-conditions" className="anchers">
+              Terms and Conditions
+            </a>
           </Typography>
           <Typography
             sx={{

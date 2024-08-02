@@ -145,6 +145,8 @@
   border-radius: 100px;
   padding: 8px 24px;
   width: 100%;
+  display: block;
+  text-decoration: none;
 }
 
 .swiper-button-prev:after,

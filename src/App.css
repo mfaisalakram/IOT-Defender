@@ -40,7 +40,14 @@ body {
   border-radius: 19px !important;
   padding: 2.5px !important;
 }
+.anchers,
+.anchers:hover {
+  color: var(--while-primary);
+}
 
+.anchers.green {
+  color: var(--green-primary) !important;
+}
 .global-block {
   background-color: var(--blue-block-background) !important;
   border-radius: 17px !important;

@@ -64,17 +64,18 @@ const Header = () => {
           height: { xs: "100px", md: "100px" },
         }}
       >
-        <Box
+        <a
           className="logo"
-          sx={{
+          style={{
             display: "flex",
             alignItems: "center",
             width: "100%",
             flex: 1,
           }}
+          href="/"
         >
           <img src="/assets/logo.png" alt="" width="200px" />
-        </Box>
+        </a>
 
         <Box
           sx={{

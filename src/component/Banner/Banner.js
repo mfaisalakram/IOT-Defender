@@ -28,9 +28,12 @@ export const Banner = () => {
                 >
                   Book a demo
                 </a>
-                <button className="learn-more-button button_secondary">
+                <a
+                  href="#Features"
+                  className="learn-more-button button_secondary"
+                >
                   Learn More
-                </button>
+                </a>
               </div>
             </div>
           </div>

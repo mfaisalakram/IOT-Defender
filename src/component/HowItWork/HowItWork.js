@@ -39,7 +39,7 @@ export const HowItWork = () => {
     },
   ];
   return (
-    <div className="HowItWork">
+    <div className="HowItWork" id="HowItWorks">
       <div className="global-container">
         <div className="head-content">
           <div className="heading-container">

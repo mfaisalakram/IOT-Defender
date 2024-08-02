@@ -1,3 +1,4 @@
+import { useLocation } from "react-router-dom";
 import { Banner } from "./component/Banner/Banner";
 import { Clients } from "./component/Clients/Clients";
 import { Footer } from "./component/common/Footer/Footer";
@@ -17,14 +18,22 @@ import TermAndConditions from "./component/TermAndConditions/TermAndConditions";
 
 function App() {
   const [showSplash, setShowSplash] = useState(true);
+  const location = useLocation();
 
   useEffect(() => {
     const timer = setTimeout(() => {
       setShowSplash(false);
+      if (location.hash === "#FAQ") {
+        const element = document.getElementById("FAQ");
+        if (element) {
+          element.scrollIntoView({ behavior: "smooth" });
+        }
+      }
     }, 3000);
 
-    return () => clearTimeout(timer); // Cleanup the timer on component unmount
-  }, []);
+    return () => clearTimeout(timer);
+  }, [location]);
+
   return (
     <div className="App">
       <Header />

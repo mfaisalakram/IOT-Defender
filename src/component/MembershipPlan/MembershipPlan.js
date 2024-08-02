@@ -29,7 +29,7 @@ export const MembershipPlan = () => {
           title: "10 Sensors",
         },
       ],
-      buttonText: "Get Started",
+      buttonText: "Contact Us",
     },
     {
       id: 2,
@@ -51,13 +51,13 @@ export const MembershipPlan = () => {
           title: "100 Sensors",
         },
       ],
-      buttonText: "Get Started",
+      buttonText: "Contact Us",
     },
     {
       id: 3,
       title: "Gold",
       description:
-        "Add up to 25 devices at 10 sensors each with 50,000 API calls. Suitable for Medium-sized Corporations.",
+        "Add up to 25 devices at 10 sensors each with 50,000 API calls. Suitable for Medium-sized Industries.",
       type: "Popular",
       currency: "$",
       price: 0,
@@ -73,7 +73,7 @@ export const MembershipPlan = () => {
           title: "250 Sensors",
         },
       ],
-      buttonText: "Get Started",
+      buttonText: "Contact Us",
     },
     {
       id: 4,
@@ -95,13 +95,13 @@ export const MembershipPlan = () => {
           title: "500 Sensors",
         },
       ],
-      buttonText: "Get Started",
+      buttonText: "Contact Us",
     },
     {
       id: 5,
       title: "Enterprise",
       description:
-        "Add up to 100+ Devices at 10 sensors each with 1,000,000+ API calls. Suitable for Large Industries.",
+        "Add up to 100+ Devices at 10+ sensors each with 1,000,000+ API calls. Suitable for Large Industries.",
       type: "Non Popular",
       currency: "$",
       price: 0,
@@ -117,7 +117,7 @@ export const MembershipPlan = () => {
           title: "1000+ Sensors",
         },
       ],
-      buttonText: "Get Started",
+      buttonText: "Contact Us",
     },
   ];
 
@@ -222,9 +222,12 @@ export const MembershipPlan = () => {
                           </div>
                         </div>
                         <div className="button-container">
-                          <button className="button_primary get-started-button">
+                          <a
+                            href="#GetInTouch"
+                            className="button_primary get-started-button"
+                          >
                             {item?.buttonText}
-                          </button>
+                          </a>
                         </div>
                       </div>
                     </div>

@@ -1,6 +1,8 @@
 import React from "react";
 import { Box, Typography } from "@mui/material";
 
+import { HashLink } from "react-router-hash-link";
+
 const TermsConditions = () => {
   return (
     <div
@@ -382,7 +384,10 @@ const TermsConditions = () => {
         paragraph
       >
         If you have any questions about these Terms and Conditions, please
-        contact us at info@wolfberryllc.com.
+        contact us at{" "}
+        <a className="anchers green" href="mailto:support@wolfberryllc.com">
+          support@wolfberryllc.com
+        </a>
       </Typography>
       <Box
         sx={{
@@ -401,7 +406,17 @@ const TermsConditions = () => {
             fontFamily: "Inter Tight",
           }}
         >
-          FAQ | Privacy Policy | Terms and Conditions
+          <a href="/#FAQ" className="anchers">
+            FAQ
+          </a>{" "}
+          |{" "}
+          <a href="/Privacy-policy" className="anchers">
+            Privacy Policy
+          </a>{" "}
+          |{" "}
+          <a href="/Terms-and-conditions" className="anchers">
+            Terms and Conditions
+          </a>
         </Typography>
         <Typography
           sx={{

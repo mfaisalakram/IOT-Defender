@@ -90,8 +90,8 @@ export const Footer = () => {
               >
                 {[
                   { name: "Home", href: "#data-security" },
-                  { name: "Data Security", href: "#data-security" },
-                  { name: "Process", href: "#Process" },
+                  { name: "Features", href: "#Features" },
+                  { name: "How it works", href: "#HowItWorks" },
                   { name: "Membership", href: "#Membership" },
                   { name: "FAQ", href: "#FAQ" },
                   { name: "Book a demo", href: "#GetInTouch" },
@@ -228,7 +228,7 @@ export const Footer = () => {
             >
               <a
                 href="/Privacy-policy"
-                target="__blank"
+                target="_blank"
                 style={{ color: "#fff" }}
               >
                 Privacy Policy
@@ -236,7 +236,7 @@ export const Footer = () => {
               -{" "}
               <a
                 href="/Terms-and-conditions"
-                target="__blank"
+                target="_blank"
                 style={{ color: "#fff" }}
               >
                 Terms & Conditions
