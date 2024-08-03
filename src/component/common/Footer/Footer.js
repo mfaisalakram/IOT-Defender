@@ -116,7 +116,14 @@ export const Footer = () => {
               </Box>
             </Box>
           </Grid>
-          <Grid item xs={12} md={3} sx={{ marginTop: { xs: 3, md: "-45px" } }}>
+          <Grid
+            item
+            xs={12}
+            md={3}
+            sx={{
+              marginTop: { xs: "70px", md: "0px" },
+            }}
+          >
             <Box
               className="follow-us"
               sx={{ textAlign: "start", marginLeft: { md: "30px", xs: "0px" } }}
@@ -146,6 +153,35 @@ export const Footer = () => {
                 }}
               >
                 <img src="/assets/footer-logo.png" alt="" />
+                <Typography
+                  sx={{
+                    fontSize: { xs: "14px", lg: "16px" },
+                    lineHeight: { xs: "10px", lg: "24px" },
+                    fontWeight: "400",
+                    fontFamily: "Inter Tight",
+                    marginLeft: 1,
+                    textDecoration: "underline",
+                    color: "white",
+                  }}
+                >
+                  wolfberryllc
+                </Typography>
+              </Box>
+              <Box
+                component="a"
+                href="https://www.linkedin.com/company/wolfberryllc/"
+                target="_blank"
+                rel="noopener noreferrer"
+                sx={{
+                  display: "flex",
+                  alignItems: "center",
+                  marginBottom: 4,
+                  gap: "5px",
+                }}
+              >
+                {/* <img src="/assets/footer-logo.png" alt="" /> */}
+
+                <LinkedInSvg />
                 <Typography
                   sx={{
                     fontSize: { xs: "14px", lg: "16px" },

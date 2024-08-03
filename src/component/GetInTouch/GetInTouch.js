@@ -5,6 +5,7 @@ import { Wolfberryllc } from "../../assets/svgs/wolfberryllc";
 import TwitterSvg from "../../assets/svgs/twitter";
 import LinkedInSvg from "../../assets/svgs/linkedIn";
 import "./GetInTouch.css";
+import Discord from "../../assets/svgs/discord";
 
 export const GetInTouch = () => {
   const [formValues, setFormValues] = useState({
@@ -149,6 +150,32 @@ export const GetInTouch = () => {
                 }}
               >
                 <LinkedInSvg />
+                <Typography
+                  className="main-heading"
+                  sx={{
+                    fontSize: "16px",
+                    marginLeft: 1,
+                    fontWeight: "400",
+                    lineHeight: "19.2px",
+                    textDecoration: "underline",
+                    color: "white",
+                  }}
+                >
+                  wolfberryllc
+                </Typography>
+              </Box>
+              <Box
+                component="a"
+                href="https://discord.gg/Sfmx6bvv"
+                target="_blank"
+                rel="noopener noreferrer"
+                sx={{
+                  display: "flex",
+                  alignItems: "center",
+                  mb: 4,
+                }}
+              >
+                <Discord />
                 <Typography
                   className="main-heading"
                   sx={{

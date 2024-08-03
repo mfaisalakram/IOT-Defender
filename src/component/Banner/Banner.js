@@ -37,7 +37,7 @@ export const Banner = () => {
               </div>
             </div>
           </div>
-          <div className="gif-container mt-4">
+          <div className="gif-container">
             <img src={banner_gif} />
           </div>
         </div>
