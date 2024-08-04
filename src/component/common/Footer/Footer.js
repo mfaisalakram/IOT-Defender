@@ -1,6 +1,7 @@
 import React from "react";
 
 import LinkedInSvg from "../../../assets/svgs/linkedIn";
+import Discord from "../../../assets/svgs/Discord";
 import { Box, Divider, Grid, Typography } from "@mui/material";
 
 export const Footer = () => {
@@ -210,7 +211,7 @@ export const Footer = () => {
               >
                 {/* <img src="/assets/footer-logo.png" alt="" /> */}
 
-                <LinkedInSvg />
+                <Discord />
                 <Typography
                   sx={{
                     fontSize: { xs: "14px", lg: "16px" },
