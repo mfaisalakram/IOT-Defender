@@ -1,7 +1,7 @@
 import React from "react";
 
 import LinkedInSvg from "../../../assets/svgs/linkedIn";
-import Discord from "../../../assets/svgs/Discord";
+import Discord from "../../../assets/svgs/discord";
 import { Box, Divider, Grid, Typography } from "@mui/material";
 
 export const Footer = () => {
