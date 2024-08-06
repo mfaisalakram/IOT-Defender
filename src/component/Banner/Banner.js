@@ -1,6 +1,6 @@
 import React from "react";
 
-import banner_gif from "../../assets/gif/banner-gif.gif";
+import banner_gif from "../../assets/gif/banner-gif2.gif";
 
 import "./Banner.css";
 
