@@ -182,8 +182,11 @@ export const MembershipPlan = () => {
                   item?.type === "Popular" ? "popular" : ""
                 }`}
               >
-                <div className="global-block-wrapper_top">
-                  <div className="global-block_top">
+                <div
+                  className="global-block-wrapper_top"
+                  style={{ height: "470px" }}
+                >
+                  <div className="global-block_top" style={{ height: "465px" }}>
                     <div className="card-outer">
                       <div className="card-inner">
                         <div className="card-brand">

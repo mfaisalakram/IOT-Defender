@@ -36,7 +36,7 @@ const Header = () => {
 
   const menuItems = [
     { text: "Data Security", linkTo: "#data-security" },
-    { text: "Process", linkTo: "#Process" },
+    { text: "Process", linkTo: "#HowItWorks" },
     { text: "Features", linkTo: "#Features" },
     { text: "Membership", linkTo: "#Membership" },
     { text: "FAQ", linkTo: "#FAQ" },
@@ -231,12 +231,15 @@ const Header = () => {
             }}
             className="mobile-version"
           >
-            <Button
+            <Link
+              href="#GetInTouch"
               variant="contained"
               className="button_primary book-demo-button"
+              style={{ textDecoration: "none" }}
+              onClick={toggleDrawer(false)}
             >
               Book a demo
-            </Button>
+            </Link>
           </Box>
           <Box sx={{ display: "flex", justifyContent: "center" }}>
             <Divider
