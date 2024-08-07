@@ -57,7 +57,7 @@ export const OurFeatures = () => {
     },
   ];
   return (
-    <div className="OurFeatures">
+    <div className="OurFeatures" id="Feature">
       <div className="global-container">
         <div className="head-content">
           <div className="heading-container">

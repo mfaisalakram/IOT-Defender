@@ -34,19 +34,18 @@ const Header = () => {
     setDrawerOpen(open);
   };
 
+  // { text: "Data Security", linkTo: "#data-security" },
   const menuItems = [
-    { text: "Data Security", linkTo: "#data-security" },
-    { text: "Process", linkTo: "#HowItWorks" },
-    { text: "Features", linkTo: "#Features" },
+    { text: "How it works", linkTo: "#HowItWorks" },
+    { text: "Features", linkTo: "#Feature" },
     { text: "Membership", linkTo: "#Membership" },
     { text: "FAQ", linkTo: "#FAQ" },
     { text: "Book a demo", linkTo: "#GetInTouch" },
   ];
 
   const menuItemsMobile = [
-    { text: "Data Security", linkTo: "#data-security" },
-    { text: "Process", linkTo: "#Process" },
-    { text: "Features", linkTo: "#Features" },
+    { text: "How it works", linkTo: "#Process" },
+    { text: "Features", linkTo: "#Feature" },
     { text: "Membership", linkTo: "#Membership" },
     { text: "FAQ", linkTo: "#FAQ" },
   ];

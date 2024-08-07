@@ -91,7 +91,7 @@ export const Footer = () => {
               >
                 {[
                   { name: "Home", href: "#data-security" },
-                  { name: "Features", href: "#Features" },
+                  { name: "Features", href: "#Feature" },
                   { name: "How it works", href: "#HowItWorks" },
                   { name: "Membership", href: "#Membership" },
                   { name: "FAQ", href: "#FAQ" },
