@@ -199,7 +199,7 @@ export const Footer = () => {
               </Box>
               <Box
                 component="a"
-                href="https://discord.gg/Sfmx6bvv"
+                href="https://discord.gg/eFn4Jdvq5f"
                 target="_blank"
                 rel="noopener noreferrer"
                 sx={{
