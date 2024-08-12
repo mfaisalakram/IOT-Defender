@@ -40,6 +40,7 @@ const Header = () => {
     { text: "Features", linkTo: "#Feature" },
     { text: "Membership", linkTo: "#Membership" },
     { text: "FAQ", linkTo: "#FAQ" },
+    { text: "Sign Up", linkTo: "/sign-up" },
     { text: "Book a demo", linkTo: "#GetInTouch" },
   ];
 
@@ -48,6 +49,7 @@ const Header = () => {
     { text: "Features", linkTo: "#Feature" },
     { text: "Membership", linkTo: "#Membership" },
     { text: "FAQ", linkTo: "#FAQ" },
+    { text: "Sign Up", linkTo: "/sign-up" },
   ];
 
   return (
@@ -90,6 +92,7 @@ const Header = () => {
               key={index}
               href={item.linkTo}
               style={{ textDecoration: "none", color: "#fff" }}
+              target={item.text === "Sign Up" ? "_blank" : ""}
             >
               <Typography
                 sx={{
@@ -208,6 +211,7 @@ const Header = () => {
                   color: "white", // keep text color
                   textAlign: "start",
                 }}
+                target={item.text === "Sign Up" ? "_blank" : ""}
               >
                 <ListItem
                   key={index}
