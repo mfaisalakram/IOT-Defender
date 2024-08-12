@@ -15,6 +15,7 @@ import { useEffect, useState } from "react";
 import SplashScreen from "./component/SplashScreen/SplashScreen";
 import PrivacyPolicy from "./component/PrivacyPolicy/PrivacyPolicy";
 import TermAndConditions from "./component/TermAndConditions/TermAndConditions";
+import SignUp from "./component/SignUp/SignUp";
 
 function App() {
   const [showSplash, setShowSplash] = useState(true);
@@ -60,6 +61,7 @@ function App() {
 
         <Route path="/Privacy-policy" element={<PrivacyPolicy />} />
         <Route path="/Terms-and-conditions" element={<TermAndConditions />} />
+        <Route path="/sign-up" element={<SignUp />} />
       </Routes>
       <Footer />
     </div>
