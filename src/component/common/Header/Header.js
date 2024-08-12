@@ -9,20 +9,21 @@ import {
   ListItemText,
   Typography,
   Divider,
-  Link,
 } from "@mui/material";
 import CloseIcon from "@mui/icons-material/Close";
 import MenuIcon from "@mui/icons-material/Menu";
+import { useLocation } from "react-router-dom"; // Import useLocation for path detection
 import IOT_mobile_logo from "../../../assets/svgs/IOT_mobile_logo";
 import LinkedInSvg from "../../../assets/svgs/linkedIn";
 import TwitterSvg from "../../../assets/svgs/twitter";
 import { Wolfberryllc } from "../../../assets/svgs/wolfberryllc";
 import MenuSvg from "../../../assets/svgs/menuSvg";
-
+import { HashLink } from "react-router-hash-link";
 import "./Header.css";
 
 const Header = () => {
   const [drawerOpen, setDrawerOpen] = useState(false);
+  const location = useLocation(); // Access the current location
 
   const toggleDrawer = (open) => (event) => {
     if (
@@ -34,7 +35,10 @@ const Header = () => {
     setDrawerOpen(open);
   };
 
-  // { text: "Data Security", linkTo: "#data-security" },
+  const isPolicyPage =
+    location.pathname === "/Privacy-policy" ||
+    location.pathname === "/Terms-and-conditions"; // Check if current path matches
+
   const menuItems = [
     { text: "How it works", linkTo: "#HowItWorks" },
     { text: "Features", linkTo: "#Feature" },
@@ -88,41 +92,34 @@ const Header = () => {
           }}
         >
           {menuItems.slice(0, -1).map((item, index) => (
-            <a
+            <HashLink
               key={index}
-              href={item.linkTo}
-              style={{ textDecoration: "none", color: "#fff" }}
+              style={{
+                fontSize: "16px",
+                fontWeight: "700",
+                fontFamily: "Inter Tight",
+                lineHeight: "21.70px",
+                color: "#fff", // keep text color
+                textDecoration: "none",
+                color: "#fff",
+              }}
+              to={isPolicyPage ? `/${item.linkTo}` : item.linkTo}
+              // href={item.linkTo}
+              // style={{ textDecoration: "none", color: "#fff" }}
               target={item.text === "Sign Up" ? "_blank" : ""}
             >
-              <Typography
-                sx={{
-                  fontSize: "16px",
-                  fontWeight: "700",
-                  fontFamily: "Inter Tight",
-                  lineHeight: "21.70px",
-                  color: "#fff", // keep text color
-                }}
-              >
-                {item.text}
-              </Typography>
-            </a>
+              {item.text}
+            </HashLink>
           ))}
 
           <Button
-            // sx={{
-            //   fontSize: "18px",
-            //   fontWeight: "700",
-            //   color: "black",
-            //   background: "#C9E265",
-            //   borderRadius: "100px",
-            //   "&:hover": {
-            //     backgroundColor: "#C9E265",
-            //     color: "black",
-            //   },
-            // }}
             variant="contained"
             className="button_primary book-demo-button"
-            href={menuItems[menuItems.length - 1].linkTo}
+            href={
+              isPolicyPage
+                ? `/${menuItems[menuItems.length - 1].linkTo}`
+                : menuItems[menuItems.length - 1].linkTo
+            }
           >
             {menuItems[menuItems.length - 1].text}
           </Button>
@@ -140,18 +137,17 @@ const Header = () => {
             onClick={toggleDrawer(true)}
             sx={{
               color: "white",
-              outline: "none", // Removes the focus outline
-              border: "none", // Removes any default border
+              outline: "none",
+              border: "none",
               "&:focus": {
-                outline: "none", // Removes the focus outline when the button is focused
+                outline: "none",
               },
               "&:active": {
-                border: "none", // Ensures no border is applied when the button is active
+                border: "none",
               },
             }}
           >
             <MenuSvg />
-            {/* <MenuIcon /> */}
           </IconButton>
         </Box>
 
@@ -164,7 +160,7 @@ const Header = () => {
               width: "100%",
               height: "100%",
               background: "#0C0919",
-              boxSizing: "border-box", // Ensure the drawer content does not overflow
+              boxSizing: "border-box",
               padding: "16px",
             },
           }}
@@ -203,10 +199,10 @@ const Header = () => {
           >
             {/*  mobile version */}
             {menuItemsMobile.map((item, index) => (
-              <Link
+              <HashLink
                 key={index}
-                href={item.linkTo}
-                sx={{
+                to={isPolicyPage ? `/${item.linkTo}` : item.linkTo}
+                style={{
                   textDecoration: "none", // remove underline
                   color: "white", // keep text color
                   textAlign: "start",
@@ -223,7 +219,7 @@ const Header = () => {
                     sx={{ paddingLeft: "0px !important" }}
                   />
                 </ListItem>
-              </Link>
+              </HashLink>
             ))}
           </List>
           <Box
@@ -234,15 +230,19 @@ const Header = () => {
             }}
             className="mobile-version"
           >
-            <Link
-              href="#GetInTouch"
+            <HashLink
+              to={
+                isPolicyPage
+                  ? `/${menuItems[menuItems.length - 1].linkTo}`
+                  : menuItems[menuItems.length - 1].linkTo
+              }
               variant="contained"
               className="button_primary book-demo-button"
               style={{ textDecoration: "none" }}
               onClick={toggleDrawer(false)}
             >
               Book a demo
-            </Link>
+            </HashLink>
           </Box>
           <Box sx={{ display: "flex", justifyContent: "center" }}>
             <Divider
