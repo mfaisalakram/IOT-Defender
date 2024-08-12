@@ -91,6 +91,19 @@ body {
   pointer-events: none;
 }
 
+ body::-webkit-scrollbar {
+  width: 10px;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: #0a162f !important;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #C9E265;
+  border-radius: 100px;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;

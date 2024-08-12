@@ -90,12 +90,12 @@ export const Footer = () => {
                 }}
               >
                 {[
-                  { name: "Home", href: "#data-security" },
-                  { name: "Features", href: "#Feature" },
-                  { name: "How it works", href: "#HowItWorks" },
-                  { name: "Membership", href: "#Membership" },
-                  { name: "FAQ", href: "#FAQ" },
-                  { name: "Book a demo", href: "#GetInTouch" },
+                  { name: "Home", href: "/#data-security" },
+                  { name: "Features", href: "/#Feature" },
+                  { name: "How it works", href: "/#HowItWorks" },
+                  { name: "Membership", href: "/#Membership" },
+                  { name: "FAQ", href: "/#FAQ" },
+                  { name: "Book a demo", href: "/#GetInTouch" },
                 ].map((link, index) => (
                   <a href={link.href} style={{ textDecoration: "none" }}>
                     <Typography

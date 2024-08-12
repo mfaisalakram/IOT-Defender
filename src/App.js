@@ -29,6 +29,26 @@ function App() {
         if (element) {
           element.scrollIntoView({ behavior: "smooth" });
         }
+      } else if (location.hash === "#Membership") {
+        const element = document.getElementById("Membership");
+        if (element) {
+          element.scrollIntoView({ behavior: "smooth" });
+        }
+      } else if (location.hash === "#HowItWorks") {
+        const element = document.getElementById("HowItWorks");
+        if (element) {
+          element.scrollIntoView({ behavior: "smooth" });
+        }
+      } else if (location.hash === "#Feature") {
+        const element = document.getElementById("Feature");
+        if (element) {
+          element.scrollIntoView({ behavior: "smooth" });
+        }
+      } else if (location.hash === "#Feature") {
+        const element = document.getElementById("Feature");
+        if (element) {
+          element.scrollIntoView({ behavior: "smooth" });
+        }
       }
     }, 3000);
 

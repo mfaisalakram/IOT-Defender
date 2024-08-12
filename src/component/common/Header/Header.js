@@ -40,19 +40,19 @@ const Header = () => {
     location.pathname === "/Terms-and-conditions"; // Check if current path matches
 
   const menuItems = [
-    { text: "How it works", linkTo: "#HowItWorks" },
-    { text: "Features", linkTo: "#Feature" },
-    { text: "Membership", linkTo: "#Membership" },
-    { text: "FAQ", linkTo: "#FAQ" },
+    { text: "How it works", linkTo: "/#HowItWorks" },
+    { text: "Features", linkTo: "/#Feature" },
+    { text: "Membership", linkTo: "/#Membership" },
+    { text: "FAQ", linkTo: "/#FAQ" },
     { text: "Sign Up", linkTo: "/sign-up" },
-    { text: "Book a demo", linkTo: "#GetInTouch" },
+    { text: "Book a demo", linkTo: "/#GetInTouch" },
   ];
 
   const menuItemsMobile = [
-    { text: "How it works", linkTo: "#Process" },
-    { text: "Features", linkTo: "#Feature" },
-    { text: "Membership", linkTo: "#Membership" },
-    { text: "FAQ", linkTo: "#FAQ" },
+    { text: "How it works", linkTo: "/#Process" },
+    { text: "Features", linkTo: "/#Feature" },
+    { text: "Membership", linkTo: "/#Membership" },
+    { text: "FAQ", linkTo: "/#FAQ" },
     { text: "Sign Up", linkTo: "/sign-up" },
   ];
 
@@ -103,7 +103,7 @@ const Header = () => {
                 textDecoration: "none",
                 color: "#fff",
               }}
-              to={isPolicyPage ? `/${item.linkTo}` : item.linkTo}
+              to={isPolicyPage ? `${item.linkTo}` : item.linkTo}
               // href={item.linkTo}
               // style={{ textDecoration: "none", color: "#fff" }}
               target={item.text === "Sign Up" ? "_blank" : ""}
@@ -117,7 +117,7 @@ const Header = () => {
             className="button_primary book-demo-button"
             href={
               isPolicyPage
-                ? `/${menuItems[menuItems.length - 1].linkTo}`
+                ? `${menuItems[menuItems.length - 1].linkTo}`
                 : menuItems[menuItems.length - 1].linkTo
             }
           >
@@ -201,7 +201,7 @@ const Header = () => {
             {menuItemsMobile.map((item, index) => (
               <HashLink
                 key={index}
-                to={isPolicyPage ? `/${item.linkTo}` : item.linkTo}
+                to={isPolicyPage ? `${item.linkTo}` : item.linkTo}
                 style={{
                   textDecoration: "none", // remove underline
                   color: "white", // keep text color
@@ -233,7 +233,7 @@ const Header = () => {
             <HashLink
               to={
                 isPolicyPage
-                  ? `/${menuItems[menuItems.length - 1].linkTo}`
+                  ? `${menuItems[menuItems.length - 1].linkTo}`
                   : menuItems[menuItems.length - 1].linkTo
               }
               variant="contained"
