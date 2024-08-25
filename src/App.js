@@ -49,6 +49,11 @@ function App() {
         if (element) {
           element.scrollIntoView({ behavior: "smooth" });
         }
+      } else if (location.hash === "#GetInTouch") {
+        const element = document.getElementById("GetInTouch");
+        if (element) {
+          element.scrollIntoView({ behavior: "smooth" });
+        }
       }
     }, 3000);
 

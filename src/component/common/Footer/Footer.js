@@ -265,7 +265,6 @@ export const Footer = () => {
             >
               <a
                 href="/Privacy-policy"
-                target="_blank"
                 style={{ color: "#fff" }}
               >
                 Privacy Policy
@@ -273,7 +272,6 @@ export const Footer = () => {
               -{" "}
               <a
                 href="/Terms-and-conditions"
-                target="_blank"
                 style={{ color: "#fff" }}
               >
                 Terms & Conditions

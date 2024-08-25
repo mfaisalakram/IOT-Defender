@@ -91,8 +91,8 @@ body {
   pointer-events: none;
 }
 
- body::-webkit-scrollbar {
-  width: 10px;
+body::-webkit-scrollbar {
+  width: 8px;
 }
 
 body::-webkit-scrollbar-track {
@@ -100,8 +100,8 @@ body::-webkit-scrollbar-track {
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: #C9E265;
-  border-radius: 100px;
+  background-color: #c9e265;
+  border-radius: 6px;
 }
 
 @media (prefers-reduced-motion: no-preference) {
