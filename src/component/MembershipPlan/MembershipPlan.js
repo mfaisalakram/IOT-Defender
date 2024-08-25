@@ -6,6 +6,7 @@ import Swiper from "https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs
 
 import { Box } from "@mui/material";
 import "./MembershipPlan.css";
+import InfoIcon from "../../assets/svgs/info_icon";
 
 export const MembershipPlan = () => {
   const MembershipData = [
@@ -208,7 +209,11 @@ export const MembershipPlan = () => {
                         <div className="card-bottom">
                           <div className="item-list-container">
                             {item?.items?.map((el, index) => (
-                              <div className="single-item" key={index}>
+                              <div
+                                className="single-item"
+                                key={index}
+                                style={{ position: "relative" }}
+                              >
                                 {item?.type === "Popular" ? (
                                   <div>
                                     <TickBlackIconMemberShip />
@@ -218,8 +223,22 @@ export const MembershipPlan = () => {
                                     <TickGreenIcon />
                                   </div>
                                 )}
+                                <div className="title">
+                                  <span>{el?.title}</span>
 
-                                <div className="title">{el?.title}</div>
+                                  {el?.title.includes("Sensors") &&
+                                    item?.title.toLocaleLowerCase() !==
+                                      "free" && (
+                                      <div class="info-block member">
+                                        <a data-tooltip="Each device can contain maximum 10 sensors">
+                                          {/* <span>i</span> */}
+                                          <InfoIcon
+                                            popular={item?.type === "Popular"}
+                                          />
+                                        </a>
+                                      </div>
+                                    )}
+                                </div>{" "}
                               </div>
                             ))}
                           </div>
