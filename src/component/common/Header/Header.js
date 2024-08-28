@@ -44,7 +44,7 @@ const Header = () => {
     { text: "Features", linkTo: "/#Feature" },
     { text: "Membership", linkTo: "/#Membership" },
     { text: "FAQ", linkTo: "/#FAQ" },
-    { text: "Sign Up", linkTo: "/sign-up" },
+    { text: "Sign In", linkTo: "/sign-up" },
     { text: "Book a demo", linkTo: "/#GetInTouch" },
   ];
 
@@ -53,7 +53,7 @@ const Header = () => {
     { text: "Features", linkTo: "/#Feature" },
     { text: "Membership", linkTo: "/#Membership" },
     { text: "FAQ", linkTo: "/#FAQ" },
-    { text: "Sign Up", linkTo: "/sign-up" },
+    { text: "Sign In", linkTo: "/sign-up" },
   ];
 
   return (
@@ -106,7 +106,7 @@ const Header = () => {
               to={isPolicyPage ? `${item.linkTo}` : item.linkTo}
               // href={item.linkTo}
               // style={{ textDecoration: "none", color: "#fff" }}
-              target={item.text === "Sign Up" ? "_blank" : ""}
+              target={item.text === "Sign In" ? "_blank" : ""}
             >
               {item.text}
             </HashLink>
@@ -207,7 +207,7 @@ const Header = () => {
                   color: "white", // keep text color
                   textAlign: "start",
                 }}
-                target={item.text === "Sign Up" ? "_blank" : ""}
+                target={item.text === "Sign In" ? "_blank" : ""}
               >
                 <ListItem
                   key={index}
