@@ -16,6 +16,7 @@ import SplashScreen from "./component/SplashScreen/SplashScreen";
 import PrivacyPolicy from "./component/PrivacyPolicy/PrivacyPolicy";
 import TermAndConditions from "./component/TermAndConditions/TermAndConditions";
 import SignUp from "./component/SignUp/SignUp";
+import CookieNotification from "./component/CookieNotification";
 
 function App() {
   const [showSplash, setShowSplash] = useState(true);
@@ -89,6 +90,8 @@ function App() {
         <Route path="/sign-up" element={<SignUp />} />
       </Routes>
       <Footer />
+      <CookieNotification />
+      
     </div>
   );
 }

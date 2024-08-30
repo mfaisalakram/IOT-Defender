@@ -134,3 +134,42 @@ body::-webkit-scrollbar-thumb {
 
 @media (max-width: 575.98px) {
 }
+
+
+.cookie-notification {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 15px;
+  text-align: center;
+  z-index: 1000;
+}
+
+.cookie-notification p {
+  margin: 0;
+  display: inline;
+}
+
+.cookie-notification button {
+  margin-left: 10px;
+  padding: 4px 10px;
+  background-color: #c9e265;
+  color: #000000;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: 600;
+}
+
+.cookie-notification button:hover {
+  background-color: #45a049;
+}
+
+.cookie-notification a {
+  color: #00bcd4;
+  text-decoration: underline;
+}
+
